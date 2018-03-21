@@ -33,9 +33,6 @@
     <![endif]-->
 
     <style type="text/css">
-        #cover p {
-            color: cyan;
-        }
         #cover h1, #cover h2 {
             text-shadow: 10px 10px 10px #1c1e20 !important;
         }
@@ -69,10 +66,10 @@
         blockquote div.author:before {
             content: '(';
         }
+
         blockquote div.author:after {
             content: ')';
         }
-
 
     </style>
 </head>
@@ -81,13 +78,14 @@
 <div class="reveal">
     <div class="slides">
 
-        <section id="cover" class="shadow" data-background-image="images/blockchain-3206624_1920.jpg" data-markdown>
-            # Bitcoin
-            ## and the
-            # Blockchain
+        <section id="cover" class="shadow" data-background-image="images/blockchain-3206624_1920.jpg">
+            <h1>Bitcoin</h1>
+            <h2>and the</h2>
+            <h1>Blockchain</h1>
 
-            Luigi R. Viggiano  <br>
-            luigi.viggiano@gmail.com
+            <p>Luigi R. Viggiano<br>
+                <a href="mailto:luigi.viggiano@gmail.com?subject=Bitcoin+and+the+blockchain">&lt;luigi.viggiano@gmail.com&gt;</a>
+            </p>
         </section>
 
 
@@ -122,8 +120,7 @@
                     ## What's new?
 
                     - Solves the problem of "double spending"
-                    - Trustless: need for financial institution, government, etc.
-
+                    - Trustless: no need for banks, financial institutions, governments, etc.
                     - Permissionless: no need to "sign up" or create an account
 
                     <span class="fragment fade-up">
@@ -140,11 +137,12 @@
                 ## What is the Blockchain?
 
                 - Distributed Database.
-                - Records are "Blocks" chained together with cryptographic hash.
+                - Records are "Blocks" of transactions, chained together with cryptographic hash.
                 - Blocks are:
                     - Tamper-proof (verifiable)
                     - Immutable (permanent)
-                - Blockchain is a distributed Ledger containg the full history of bitcoin since the genesis.
+
+                Blockchain is a distributed Ledger containing the full history of all bitcoins since the genesis.
             </section>
         </section>
 
