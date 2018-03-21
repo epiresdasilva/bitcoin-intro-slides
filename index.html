@@ -33,9 +33,47 @@
     <![endif]-->
 
     <style type="text/css">
-        .shadow {
+        #cover p {
+            color: cyan;
+        }
+        #cover h1, #cover h2 {
             text-shadow: 10px 10px 10px #1c1e20 !important;
         }
+
+        p.shadow, section.shadow {
+            text-shadow: 3px 3px 1px #1c1e20 !important;
+        }
+
+        #cover p {
+            text-align: center;
+        }
+
+        .reveal section.shadow blockquote {
+            background: rgba(180, 180, 180, 0.2);
+        }
+
+        section p {
+            text-align: justify;
+        }
+
+        blockquote {
+            text-align: left;
+            width: 90% !important;
+        }
+
+        blockquote div.author {
+            text-align: right;
+            margin-right: 10pt;
+        }
+
+        blockquote div.author:before {
+            content: '(';
+        }
+        blockquote div.author:after {
+            content: ')';
+        }
+
+
     </style>
 </head>
 
@@ -43,55 +81,80 @@
 <div class="reveal">
     <div class="slides">
 
-        <section id="cover" data-background-image="images/blockchain-3206624_1920.jpg">
-            <h1 class="shadow">Bitcoin <br> and the <br> Blockchain</h1>
+        <section id="cover" class="shadow" data-background-image="images/blockchain-3206624_1920.jpg" data-markdown>
+            # Bitcoin
+            ## and the
+            # Blockchain
+
+            Luigi R. Viggiano  <br>
+            luigi.viggiano@gmail.com
         </section>
 
-        <section>
 
-            <section id="bitcoin">
+        <section id="definition" data-background-image="images/bitcoin-3227986_1920.jpg" class="shadow">
+            <section id="currency-what-is" data-markdown>
+                ## Digital Currency
+
+                - Medium of exchange.
+                - Measure of value.  <br>
+                  (providing a unit of value)
+                - Store of value.
+            </section>
+
+            <section id="bitcoin-issues-solved" data-markdown>
+                <textarea data-template>
+                    ## What's new?
+
+                    - Solves the problem of "double spending"
+                    - Trustless: need for financial institution, government, etc.
+
+                    - Permissionless: no need to "sign up" or create an account
+
+                    <span class="fragment fade-up">
+                        The first time in history we have a digital asset that can be transferred but cannot be duplicated.
+                    </span>
+
+                    <span class="fragment fade-up">
+                        Basically: digital cash!
+                    </span>
+                </textarea>
+            </section>
+
+
+            <section id="bitcoin-what-is" class="shadow">
                 <h2>What is Bitcoin?</h2>
 
-                <figure class="fragment fade-up">
-                    <blockquote cite="https://bitcoin.org/en/">
-                        First decentralized digital currency.
-                    </blockquote>
-                    <figcaption>bitcoin.org</figcaption>
-                </figure>
+                <blockquote>
+                    <q>First decentralized digital currency.</q>
+                    <div class="author">bitcoin.org</div>
+                </blockquote>
 
-                <figure class="fragment fade-up">
-                    <blockquote cite="https://bitcoin.org/bitcoin.pdf">
-                        A purely peer-to-peer version of electronic cash would allow online payments to be sent directly
-                        from one party to another without going through a financial institution.
-                    </blockquote>
-                    <figcaption>
-                        Satoshi Nakamoto - the bitcoin whitepaper
-                    </figcaption>
-                </figure>
+                <blockquote>
+                    <q>A purely peer-to-peer version of electronic cash would allow online payments to be sent directly
+                    from one party to another without going through a financial institution.</q>
+                    <div class="author">Satoshi Nakamoto - the bitcoin whitepaper</div>
+                </blockquote>
 
             </section>
 
-            <section id="blockchain">
+            <section id="blockchain-what-is" data-markdown>
+                ## What is the Blockchain?
 
-                <h2>What is the Blockchain?</h2>
-
+                - Distributed Database.
+                - Records are "Blocks" chained together with cryptographic hash.
+                - Blocks are:
+                    - Tamper-proof (verifiable)
+                    - Immutable (permanent)
+                - Blockchain is a distributed Ledger containg the full history of bitcoin since the genesis.
             </section>
-
-
         </section>
 
-        <section id="credits">
-            <h2>Credits</h2>
-            <ul>
-                <li>HTML Presentation Framework: https://revealjs.com</li>
-                <li>Royalty free images:
-                    <ul>
-                        <li>https://pixabay.com</li>
-                        <li> https://unsplash.com</li>
-                    </ul>
-                </li>
 
-            </ul>
+        <section id="credits" data-markdown>
+            ## Credits
+
+            - HTML Presentation Framework: https://revealjs.com
+            - This presentation images: https://pixabay.com
         </section>
 
     </div>
