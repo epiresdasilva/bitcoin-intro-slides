@@ -75,10 +75,12 @@
             content: ')';
         }
 
-        section image {
-            border: 0px !important;
+        p img {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            display: block;
+            border: 1px solid #2b2b2b !important;
         }
-
     </style>
 </head>
 
@@ -98,7 +100,7 @@
         </section>
 
 
-        <section id="definition" data-background-image="images/bitcoin-3227986.jpg" class="shadow">
+        <section id="definition" class="shadow" data-background-image="images/bitcoin-3227986.jpg">
             <section class="center" id="currency-what-is" data-markdown>
                 ## What is a "Currency"
 
@@ -153,7 +155,7 @@
 
         </section>
 
-        <section id="technical" data-background-image="images/matrix-2354492.jpg" class="shadow">
+        <section id="technical" class="shadow" data-background-image="images/matrix-2354492.jpg">
             <section id="bitcoin-in-a-nutshell" data-markdown>
                 ## Bitcoin in a nutshell
 
@@ -163,14 +165,14 @@
                 - Economic Theory.
             </section>
 
-            <section id="hash-functions">
-                <h2>Hash functions</h2>
+            <section id="hash-functions" class="shadow" data-markdown>
+                ## Hash functions
 
-                <p>Hash functions maps data of arbitrary size to a fixed size.</p>
+                Hash functions maps data of arbitrary size to a fixed size.
 
-                <img src="images/hash-functions.png" alt="Hash function" />
+                ![Hash function](images/hash-functions.png)
 
-                <p>They are used to create "signatures" for data integrity.</p>
+                They are used to create "digests" or "fingerprints" for data integrity.
 
             </section>
         </section>
