@@ -21,7 +21,7 @@ the "dapp" decentralized applications, the “dao” decentralized autonomous ap
 SPEAKER
 -------
 
-Luigi Viggiano is a funder member of JUG Torino. He uses Java since 2000, and bitcoin since a couple of years, but only
+Luigi Rocco Viggiano is a funder member of JUG Torino. He uses Java since 2000, and bitcoin since a couple of years, but only
 in the last months he started to learn how it really works and become passionate about this technology. 
 He worked as free lance consultant in Italy and abroad on mobile and web application in finance, telecommunications, and
 public administration. He developed and is maintaining an open source library to manage configuration in Java/JVM 
