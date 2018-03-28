@@ -3,7 +3,7 @@ Bitcoin and the Blockchain
 
 These are the slide of the talk that will be given at [JUG Torino](http://www.jugtorino.it)
 
-SYNOPSIS
+ABSTRACT
 --------
 
 What is Bitcoin and how the blockchain works.
