@@ -166,7 +166,7 @@
             </section>
 
             <section id="hash-functions" class="shadow" data-markdown>
-                ## Hash functions
+                ## Criptographic Hash functions
 
                 Hash functions maps data of arbitrary size to a fixed size.
 
@@ -174,7 +174,64 @@
 
                 They are used to create "digests" or "fingerprints" for data integrity.
 
+                Note:
+                - Un esempio di controllo di integrità è il controllo di parità o il check-sum.
+                - Un altro esempio è il codice fiscale, l'ultima lettera è calcolata sulla base di tutte le altre.
             </section>
+
+            <section id="hash-functions-properties" class="shadow" data-markdown>
+                ## Cryptographic Hash functions
+
+                Properties:
+                - Deterministic.
+                - Quick to compute.
+                - Infeasible to reverse.
+                - Small change on the input => complete different hash value.
+                - Resistant to collision.
+
+                Popular hash functions: MD5, SHA, DSA.
+                Bitcoin uses SHA-256 for the "Proof of Work".
+
+                Note:
+                - deterministic: dato un input viene prodotto sempre lo stesso output
+                - infeasible to reverse: dev'essere impossibile, dato un hash ottenere il messaggio originale
+                  L'unico modo dev'essere il brute force.
+                - small change: idealmente, cambiando un bit nel messaggio originale ogni bit nel valore dell'hash
+                  dovrebbe avere il 50% di possibilità di cambiare.
+                - collision: due input diversi non devono mai generare lo stesso hash
+                - SHA: Secure Hash Algorithm
+                - DSA: Digital Signature Algorithm
+                - MD5: Message Digest
+            </section>
+
+            <section id="hash-function-example" class="shadow" data-markdown>
+                ## Cryptographic Hash functions
+
+                Example:
+
+                ```
+                $ echo -n "Vires in numeris." | md5
+                82e556facfe79ad4e31851f310284756
+
+                $ echo -n "Vires in numeris." | shasum -a 256
+                663dbafd847734a61d5e87b84988455e8920c470931c38d1a10b1cc4783e61d6  -
+
+                $ echo -n "Vires in numeris. 1" | shasum -a 256
+                e93fa18d3dd5cd416388de277a2e270c0cbd4eeeb62fceae84727492d722a8fa  -
+
+                $ echo -n "Vires in numeris. 2" | shasum -a 256
+                651becf6a431285a350abf62537bece3b438a3a88e9eea6b8fb5554a85026508  -
+                ```
+
+                See: https://anders.com/blockchain/hash.html
+            </section>
+
+
+            <section id="hash-proof-of-work" class="shadow" data-markdown>
+
+            </section>
+
+
         </section>
 
 
