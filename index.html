@@ -125,7 +125,7 @@
         </section>
 
         <section id="definition" class="shadow">
-            <section id="currency-what-is" data-background-image="images/money-2991837_1920.jpg" data-markdown>
+            <section class="center" id="currency-what-is" data-background-image="images/money-2991837_1920.jpg" data-markdown>
                 ## What is a "Currency"
 
                 - Medium of exchange.
@@ -309,7 +309,7 @@
             <section id="proof-of-work-example" class="shadow" data-markdown>
                 ## Proof of Work in practice
                 
-                Finding a SHA-256 starting with "00" (difficulty)
+                Finding a SHA-256 starting with "000" (difficulty)
                 
                 ```
                 $ echo -n "Vires in numeris. 1" | shasum -a 256
@@ -323,11 +323,11 @@
 
                 ...
 
-                $ echo -n "Vires in numeris. 174" | shasum -a 256
-                0051d0c37a3326411c9a4d2d338494c602ed6cb3d6e65bc9089ab2e08793ad53
+                $ echo -n "Vires in numeris. 422" | shasum -a 256
+                0004d6511de21b9de29897f3a3869cad4fbb502a2632fe08dbb2bc1b4c956bed
                 ```
                 
-                The more leading zeroes you require, the harder (esponential) is to find a matching solution.
+                The more leading zeroes you require, the harder (exponential) is to find a matching solution.
             </section>
 
 
