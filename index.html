@@ -98,7 +98,7 @@
                 <a href="https://www.linkedin.com/in/viggiano/">https://www.linkedin.com/in/viggiano/</a>
             </p>
         </section>
-        
+
         <section id="about" class="shadow" data-background-image="images/notebook-2672467_1280.jpg">
             <section id="author" data-markdown>
                 ## About the author
@@ -108,16 +108,17 @@
                 - Free lance, worked in finance, telecommunications and public administration.
                 - Uses bitcoin since a couple of years.
                 - Learning blockchain and crypto currencies since November 2017.
-                - Author of [OWNER](http://owner.aeonbits.org), an open source Java configuration library focused on properties files.
+                - Author of [OWNER](http://owner.aeonbits.org), an open source Java configuration library focused on
+                properties files.
             </section>
             <section id="abstract" data-markdown>
                 ## Agenda
-                
+
                 - What is money.
                 - What are bitcoins and what is the blockchain.
                 - How cryptography and distributed networking have been applied in bitcoin.
-                - What are the future potentials of the blockchain, dapp, dao. 
-                
+                - What are the future potentials of the blockchain, dapp, dao.
+
                 Note:
                 - DAPP: Decentralized Applications.
                 - DAO: Decentralized Autonomous Applications.
@@ -125,23 +126,24 @@
         </section>
 
         <section id="definition" class="shadow">
-            <section class="center" id="currency-what-is" data-background-image="images/money-2991837_1920.jpg" data-markdown>
+            <section class="center" id="currency-what-is" data-background-image="images/money-2991837_1920.jpg"
+                     data-markdown>
                 ## What is a "Currency"
 
                 - Medium of exchange.
-                - Measure of value.  
-                  (providing a unit of value)
+                - Measure of value.
+                (providing a unit of value)
                 - Store of value.
 
                 Example: gold, cash bills, bank accounts.
-                
+
                 Note:
                 - Bitcoin spinge a chiedersi che cos'è la moneta.
             </section>
-            
+
             <section id="monies-history" data-markdown>
                 ## Brief history of monies
-                
+
                 - Barter.
                 - Rare metals, minerals.
                 - Gold/Silver/Bronze coins.
@@ -149,7 +151,7 @@
                 - Banknote (convertible to gold).
                 - Fractional-reserve.
                 - "Fiat Money" (end of Gold Standard, Richard Nixon in 1971).
-                
+
                 Note:
                 - baratto
                 - oro, argento, diamanti (gold standard)
@@ -159,7 +161,7 @@
                 - abolizione del gold standard -> "Fiat Money", Moneta fiduciaria senza copertura
                 - Friedrich August von Hayek "Denationalization of Money"
             </section>
-                    
+
             <section id="bitcoin-what-is" class="shadow">
                 <h2>What is Bitcoin?</h2>
 
@@ -170,7 +172,7 @@
 
                 <blockquote>
                     <q>A purely peer-to-peer version of electronic cash would allow online payments to be sent directly
-                    from one party to another without going through a financial institution.</q>
+                        from one party to another without going through a financial institution.</q>
                     <div class="author">Satoshi Nakamoto - the bitcoin whitepaper</div>
                 </blockquote>
             </section>
@@ -181,8 +183,8 @@
                 - Distributed Database.
                 - Records are "Blocks" of transactions, chained together with cryptographic hash.
                 - Blocks are:
-                    - Tamper-proof (verifiable)
-                    - Immutable (permanent)
+                - Tamper-proof (verifiable)
+                - Immutable (permanent)
 
                 Blockchain is a distributed Ledger containing the full history of all bitcoins since the
                 genesis block (3rd Jan 2009).
@@ -198,25 +200,26 @@
                 - Resilient and Secure.
                 - Permissionless: instant low cost bank for everyone 24/7 365 days/year.
                 - Transnational, borderless.
-                
+
                 Note:
-                - Il "double spending" in una rete decentralizzata e asincrona è da sempre considerato non un problema 
-                  difficile da risolvere, ma impossibile.
+                - Il "double spending" in una rete decentralizzata e asincrona è da sempre considerato non un problema
+                difficile da risolvere, ma impossibile.
                 - Resilient: nessuno è mai riuscito a fermarlo, hackerarlo o semplicemente romperlo.
             </section>
-            
+
             <section id="bitcoin-whats-new-2">
                 <h2>What's new?</h2>
-                
-                <p>The first time in history we have a digital asset that can be transferred but cannot be duplicated.</p>
+
+                <p>The first time in history we have a digital asset that can be transferred but cannot be
+                    duplicated.</p>
                 <div class="fragment fade-up">
                     <p>Bitcoin is...
-                        <ul>
-                            <li>Asset, not liability.</li>
-                            <li>Scarce.</li>
-                            <li>Divisible.</li>
-                            <li>Emission mimics gold estraction.</li>
-                        </ul>
+                    <ul>
+                        <li>Asset, not liability.</li>
+                        <li>Scarce.</li>
+                        <li>Divisible.</li>
+                        <li>Emission mimics gold estraction.</li>
+                    </ul>
                     </p>
                 </div>
                 <p class="fragment fade-up">A perfect fit for money!</p>
@@ -224,17 +227,40 @@
 
         </section>
 
-        <section id="technical" class="shadow" data-background-image="images/matrix-2354492.jpg">
-            <section id="bitcoin-in-a-nutshell" data-markdown>
-                ## Bitcoin in a nutshell
+        <section id="bitcoin-in-a-nutshell" data-markdown data-background-image="images/walnut-1739021_1920.jpg">
+            ## Bitcoin in a nutshell
 
-                - Game Theory.
-                - Cryptography.
-                - Distributed Networking, Consensus.
-                - Economic Theory.
+            - Cryptography.
+            - Distributed Networking.
+            - Game Theory.
+            - Economic Theory.
+            
+            Note:
+            - Crittografia coinvolge gli aspetti legati alla privacy delle informazioni, alla integrità e alla non 
+              ripudiabilità.
+            - Distributed networking coinvolge lo scambio di informazioni in una rete decentralizzata, e il consenso 
+              su queste informazioni, per costruire un Libro Mastro (Ledger) su cui tutti sono d'accordo su chi 
+              possiede quanti bitcoin (o relativi asset su altre blockchain).
+            - Game theory, coinvolge le regole implementate in bitcoin affinché ogni giocatore tragga vantaggio dal 
+              seguire le regole, e uno svantaggio in caso in cui cerchi di imbrogliare.
+            - La teoria economica legata a bitcoin riguarda gli aspetti intrinseci e sociali della moneta come 
+              l'emissione, la divisibilità, la fungibilità e gli aspetti quali l'impatto della regolamentazione.
+        </section>
+
+        <section id="cryptography" class="shadow" data-background-image="images/hacker-2300772_1920.jpg">
+
+            <section id="cryptography-definition">
+                <h2>Cryptography</h2>
+
+                <blockquote>
+                    <q>Cryptography is the practice of techniques for secure communication in the presence of third parties
+                        called adversaries. More generally, cryptography is about constructing and analyzing protocols that
+                        prevent third parties or the public from reading private messages.</q>
+                    <div class="author">Wikipedia</div>
+                </blockquote>
             </section>
 
-            <section id="hash-functions" data-markdown data-background-image="images/bitcoin-1813503_1920.jpg">
+            <section id="hash-functions" data-markdown>
                 ## Criptographic Hash functions
 
                 Hash functions maps data of arbitrary size to a fixed size.
@@ -258,15 +284,16 @@
                 - Small change on the input => complete different hash value.
                 - Resistant to collision.
 
-                Popular hash functions: MD5, SHA, DSA.  
-                Bitcoin uses SHA-256 (32 bytes output, [2^256 possible combination](https://www.youtube.com/watch?v=S9JGmA5_unY)).
+                Popular hash functions: MD5, SHA, DSA.
+                Bitcoin uses SHA-256 (32 bytes output, [2^256 possible
+                combination](https://www.youtube.com/watch?v=S9JGmA5_unY)).
 
                 Note:
                 - deterministic: dato un input viene prodotto sempre lo stesso output
                 - infeasible to reverse: dev'essere impossibile, dato un hash ottenere il messaggio originale
-                  L'unico modo dev'essere il brute force.
+                L'unico modo dev'essere il brute force.
                 - small change: idealmente, cambiando un bit nel messaggio originale ogni bit nel valore dell'hash
-                  dovrebbe avere il 50% di possibilità di cambiare.
+                dovrebbe avere il 50% di possibilità di cambiare.
                 - collision: due input diversi non devono mai generare lo stesso hash
                 - SHA: Secure Hash Algorithm
                 - DSA: Digital Signature Algorithm
@@ -283,13 +310,13 @@
                 82e556facfe79ad4e31851f310284756
 
                 $ echo -n "Vires in numeris." | shasum -a 256
-                663dbafd847734a61d5e87b84988455e8920c470931c38d1a10b1cc4783e61d6  -
+                663dbafd847734a61d5e87b84988455e8920c470931c38d1a10b1cc4783e61d6 -
 
                 $ echo -n "Vires in numeris. 1" | shasum -a 256
-                e93fa18d3dd5cd416388de277a2e270c0cbd4eeeb62fceae84727492d722a8fa  -
+                e93fa18d3dd5cd416388de277a2e270c0cbd4eeeb62fceae84727492d722a8fa -
 
                 $ echo -n "Vires in numeris. 2" | shasum -a 256
-                651becf6a431285a350abf62537bece3b438a3a88e9eea6b8fb5554a85026508  -
+                651becf6a431285a350abf62537bece3b438a3a88e9eea6b8fb5554a85026508 -
                 ```
 
                 See: https://anders.com/blockchain/hash.html
@@ -298,47 +325,44 @@
             <section id="proof-of-work" data-markdown>
                 ## Proof of Work
 
-                PoW system is security measure to deter denial of service attacks and other service abuses such as 
+                PoW system is security measure to deter denial of service attacks and other service abuses such as
                 spam on a network by requiring some work from the service requester.
 
                 PoW is a technique used to secure the blockchain using SHA-256, this process is called "mining".
                 The primary purpose of mining is to allow Bitcoin nodes to reach a secure, tamper-resistant consensus.
-                
+
             </section>
-            
+
             <section id="proof-of-work-example" data-markdown>
                 ## Proof of Work in practice
-                
+
                 Finding a SHA-256 starting with "00" (difficulty)
-                
+
                 ```
                 $ echo -n "Vires in numeris. 1" | shasum -a 256
-                e93fa18d3dd5cd416388de277a2e270c0cbd4eeeb62fceae84727492d722a8fa  -
-                
+                e93fa18d3dd5cd416388de277a2e270c0cbd4eeeb62fceae84727492d722a8fa -
+
                 $ echo -n "Vires in numeris. 2" | shasum -a 256
-                651becf6a431285a350abf62537bece3b438a3a88e9eea6b8fb5554a85026508  -
+                651becf6a431285a350abf62537bece3b438a3a88e9eea6b8fb5554a85026508 -
 
                 ...
 
                 $ echo -n "Vires in numeris. 174" | shasum -a 256
                 0051d0c37a3326411c9a4d2d338494c602ed6cb3d6e65bc9089ab2e08793ad53
                 ```
-                
-                The more leading zeroes you require, the harder is to find a matching solution.  
+
+                The more leading zeroes you require, the harder is to find a matching solution.
                 Difficulty is exponential: 2^n, where n=number of bits.
 
                 Note:
                 The "00" is expressed in hexadecimal, so it means 00000000 in binary.
             </section>
 
-            <section id="cryptography" data-background-image="images/hacker-2300772_1920.jpg" data-markdown>
-                ## Cryptography
-                
-                
-                
-            </section>
+            
 
         </section>
+        
+        
 
 
         <section id="final-notes" data-background-image="images/typewriter-801921_1920.jpg" class="shadow">
@@ -352,13 +376,13 @@
                 ## References
 
                 - Demo:
-                    - [Anders Brownworth. Blockchain demo](https://anders.com/blockchain/).
+                - [Anders Brownworth. Blockchain demo](https://anders.com/blockchain/).
                 - Books:
-                    - [Satoshi Nakamoto. Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf).
-                    - [A. M. Antonopoulos. Mastering Bitcoin](https://bitcoinbook.info/).
+                - [Satoshi Nakamoto. Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf).
+                - [A. M. Antonopoulos. Mastering Bitcoin](https://bitcoinbook.info/).
                 - Youtube:
-                    - [Andreas M. Antonopoulos](https://www.youtube.com/user/aantonop).
-                    - [Ferdinando M. Ametrano](https://www.youtube.com/channel/UCq5tOjw0pZLeoxnqkC5KSHQ).
+                - [Andreas M. Antonopoulos](https://www.youtube.com/user/aantonop).
+                - [Ferdinando M. Ametrano](https://www.youtube.com/channel/UCq5tOjw0pZLeoxnqkC5KSHQ).
             </section>
         </section>
 
