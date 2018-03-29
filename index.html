@@ -33,26 +33,18 @@
     <![endif]-->
 
     <style type="text/css">
-        #cover h1, #cover h2 {
-            text-shadow: 10px 10px 10px #1c1e20 !important;
+        h1, h2 {
+            text-shadow: 7px 7px 10px #000000 !important;
         }
 
         div.slides {
             text-shadow: 3px 3px 1px #1c1e20 !important;
         }
         
-        div.slides section blockquote {
+        blockquote {
             background: rgba(180, 180, 180, 0.2);
         }
-
-        section p {
-            text-align: justify;
-        }
-
-        section.center p {
-            text-align: center;
-        }
-
+        
         blockquote {
             text-align: left;
             width: 90% !important;
@@ -71,12 +63,20 @@
             content: ')';
         }
 
+        section.center p {
+            text-align: center;
+        }
+
         p img {
             margin-left: auto !important;
             margin-right: auto !important;
             display: block;
             border: 1px solid #2b2b2b !important;
         }
+        p {
+            text-align: justify;
+        }
+
     </style>
 </head>
 
@@ -84,7 +84,7 @@
 <div class="reveal">
     <div class="slides">
 
-        <section id="cover" class="center" data-background-image="images/blockchain-3206624_1920.jpg">
+        <section id="cover" class="center" data-background-image="images/blockchain-3206624_1920.jpg" >
             <h1>Bitcoin</h1>
             <h2>and the</h2>
             <h1>Blockchain</h1>
@@ -105,7 +105,7 @@
                 - Uses bitcoin since a couple of years.
                 - Learning blockchain and crypto currencies since November 2017.
                 - Author of [OWNER](http://owner.aeonbits.org), an open source Java configuration library focused on
-                properties files.
+                  properties files.
             </section>
             <section id="abstract" data-markdown>
                 ## Agenda
@@ -126,8 +126,8 @@
                 ## What is a "Currency"
 
                 - Medium of exchange.
-                - Measure of value.
-                (providing a unit of value)
+                - Measure of value.  
+                  (providing a unit of value)
                 - Store of value.
 
                 Example: gold, cash bills, bank accounts.
@@ -198,7 +198,7 @@
 
                 Note:
                 - Il "double spending" in una rete decentralizzata e asincrona è da sempre considerato non un problema
-                difficile da risolvere, ma impossibile.
+                  difficile da risolvere, ma impossibile.
                 - Resilient: nessuno è mai riuscito a fermarlo, hackerarlo o semplicemente romperlo.
             </section>
 
@@ -302,16 +302,15 @@
                 - Small change on the input => complete different hash value.
                 - Resistant to collision.
 
-                Popular hash functions: MD5, SHA, DSA.
-                Bitcoin uses SHA-256 (32 bytes output, [2^256 possible
-                combination](https://www.youtube.com/watch?v=S9JGmA5_unY)).
+                Popular hash functions: MD5, SHA, DSA.  
+                Bitcoin uses SHA-256 (32 bytes output, [2^256 possible  combination](https://www.youtube.com/watch?v=S9JGmA5_unY)).
 
                 Note:
                 - deterministic: dato un input viene prodotto sempre lo stesso output
                 - infeasible to reverse: dev'essere impossibile, dato un hash ottenere il messaggio originale
-                L'unico modo dev'essere il brute force.
+                  L'unico modo dev'essere il brute force.
                 - small change: idealmente, cambiando un bit nel messaggio originale ogni bit nel valore dell'hash
-                dovrebbe avere il 50% di possibilità di cambiare.
+                  dovrebbe avere il 50% di possibilità di cambiare.
                 - collision: due input diversi non devono mai generare lo stesso hash
                 - SHA: Secure Hash Algorithm
                 - DSA: Digital Signature Algorithm
@@ -323,7 +322,7 @@
 
                 Example:
 
-                ```
+                ```bash
                 $ echo -n "Vires in numeris." | md5
                 82e556facfe79ad4e31851f310284756
 
@@ -348,7 +347,6 @@
 
                 PoW is a technique used to secure the blockchain using SHA-256, this process is called "mining".
                 The primary purpose of mining is to allow Bitcoin nodes to reach a secure, tamper-resistant consensus.
-
             </section>
 
             <section id="proof-of-work-example" data-markdown>
@@ -356,7 +354,7 @@
 
                 Finding a SHA-256 starting with "00" (difficulty)
 
-                ```
+                ```bash
                 $ echo -n "Vires in numeris. 1" | shasum -a 256
                 e93fa18d3dd5cd416388de277a2e270c0cbd4eeeb62fceae84727492d722a8fa -
 
@@ -388,14 +386,19 @@
                 ## References
 
                 - Demo:
-                - [Anders Brownworth. Blockchain demo](https://anders.com/blockchain/).
+                    - [Anders Brownworth. Blockchain demo](https://anders.com/blockchain/). 
                 - Books:
-                - [Satoshi Nakamoto. Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf).
-                - [A. M. Antonopoulos. Mastering Bitcoin](https://bitcoinbook.info/).
+                    - [Satoshi Nakamoto. Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf).
+                    - [A. M. Antonopoulos. Mastering Bitcoin](https://bitcoinbook.info/).
                 - Youtube:
-                - [Andreas M. Antonopoulos](https://www.youtube.com/user/aantonop).
-                - [Ferdinando M. Ametrano](https://www.youtube.com/channel/UCq5tOjw0pZLeoxnqkC5KSHQ).
+                    - [Andreas M. Antonopoulos](https://www.youtube.com/user/aantonop).
+                    - [Ferdinando M. Ametrano](https://www.youtube.com/channel/UCq5tOjw0pZLeoxnqkC5KSHQ).
             </section>
+        </section>
+        
+        <section id="end" data-background-color="">
+            <h1>The end</h1>
+            <h2>Thanks for your attention!</h2>
         </section>
 
     </div>
@@ -413,7 +416,6 @@
         controls: true,
         progress: true,
         history: true,
-        center: true,
 
         transition: 'concave', // none/fade/slide/convex/concave/zoom
 
