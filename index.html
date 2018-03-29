@@ -37,15 +37,11 @@
             text-shadow: 10px 10px 10px #1c1e20 !important;
         }
 
-        section.shadow, section.shadow h2, section.shadow li, section.shadow p {
+        div.slides {
             text-shadow: 3px 3px 1px #1c1e20 !important;
         }
-
-        #cover p {
-            text-align: center;
-        }
-
-        .reveal section.shadow blockquote {
+        
+        div.slides section blockquote {
             background: rgba(180, 180, 180, 0.2);
         }
 
@@ -88,7 +84,7 @@
 <div class="reveal">
     <div class="slides">
 
-        <section id="cover" class="shadow" data-background-image="images/blockchain-3206624_1920.jpg">
+        <section id="cover" class="center" data-background-image="images/blockchain-3206624_1920.jpg">
             <h1>Bitcoin</h1>
             <h2>and the</h2>
             <h1>Blockchain</h1>
@@ -99,7 +95,7 @@
             </p>
         </section>
 
-        <section id="about" class="shadow" data-background-image="images/notebook-2672467_1280.jpg">
+        <section id="about" data-background-image="images/notebook-2672467_1280.jpg">
             <section id="author" data-markdown>
                 ## About the author
 
@@ -124,10 +120,9 @@
                 - DAO: Decentralized Autonomous Applications.
             </section>
         </section>
-
-        <section id="definition" class="shadow">
-            <section class="center" id="currency-what-is" data-background-image="images/money-2991837_1920.jpg"
-                     data-markdown>
+        
+        <section id="definition" data-background-image="images/money-2991837_1920.jpg">
+            <section class="center" id="currency-what-is" data-markdown>
                 ## What is a "Currency"
 
                 - Medium of exchange.
@@ -162,7 +157,7 @@
                 - Friedrich August von Hayek "Denationalization of Money"
             </section>
 
-            <section id="bitcoin-what-is" class="shadow">
+            <section id="bitcoin-what-is">
                 <h2>What is Bitcoin?</h2>
 
                 <blockquote>
@@ -186,7 +181,7 @@
                 - Tamper-proof (verifiable)
                 - Immutable (permanent)
 
-                Blockchain is a distributed Ledger containing the full history of all bitcoins since the
+                Blockchain is a decentralized Ledger containing the full history of transaction of all bitcoin since the
                 genesis block (3rd Jan 2009).
             </section>
 
@@ -247,7 +242,7 @@
               l'emissione, la divisibilità, la fungibilità e gli aspetti quali l'impatto della regolamentazione.
         </section>
 
-        <section id="cryptography" class="shadow" data-background-image="images/hacker-2300772_1920.jpg">
+        <section id="cryptography" data-background-image="images/hacker-2300772_1920.jpg">
 
             <section id="cryptography-definition">
                 <h2>Cryptography</h2>
@@ -357,15 +352,9 @@
                 Note:
                 The "00" is expressed in hexadecimal, so it means 00000000 in binary.
             </section>
-
-            
-
         </section>
-        
-        
 
-
-        <section id="final-notes" data-background-image="images/typewriter-801921_1920.jpg" class="shadow">
+        <section id="final-notes" data-background-image="images/typewriter-801921_1920.jpg">
             <section id="credits" data-markdown>
                 ## Credits
 
