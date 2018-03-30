@@ -255,15 +255,15 @@
                 </blockquote>
             </section>
 
-            <section id="cryptography-what-is" data-markdown="">
+            <section id="cryptography-what-is" data-markdown>
                 ## Cryptography
                 
                 Cryptography is a branch of information security.  
                 Bitcoin main focus in cryptography are:
                 
-                - Privacy of information.
-                - Integrity of messages.
-                - Non-repudiation.
+                - Privacy of information. => Encription.
+                - Integrity of messages. => Digest, fingerprint
+                - Non-repudiation. => Digital signature
                 
                 Note:
                 - La privacy riguarda il fatto che io devo poter trasmettere informazioni confidenziali ad un 
@@ -276,6 +276,32 @@
                   interlocutore con certezza e quindi non possa essere ripudiato. Questo argomento è pertinente quindi 
                   alla firma digitale.
 
+            </section>
+            
+            <section id="cryptography-simmetric">
+                <h2>Symmetric-key Encryption</h2>
+                
+                <p>The encryption key is shared between Alice and Bob, and they need to keep it secret.</p>
+                
+                <p><img src="images/crypto-shared-key.png" alt="crypto-shared-key"></p>
+
+                <p class="fragment fade-up">How can they safely exchange the secret shared key?</p>
+            </section>
+            
+            <section id="cryptography-shared-key" data-markdown>
+                ## Asymmetrical Encryption
+
+                Alice needs Bob's public key to encrypt a secret message. Bob can share his public key on the network.
+                Only Bob can decrypt the message with the secret key.
+                
+                ![Asymmetrical Encryption](images/crypto-asymmetric-key.png)
+                
+
+                Note:
+                Bob generate a two keys: a public key and a secret key. 
+                Bob gives Alice his public key on the public network. 
+                Alice uses Bob's public key to encrypt the message. 
+                Bob uses his private key to decrypt Alice's message.
             </section>
 
             <section id="hash-functions" data-markdown>
