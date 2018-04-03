@@ -96,7 +96,7 @@
 <div class="reveal">
     <div class="slides">
 
-        <section id="cover" class="center" data-background-image="images/blockchain-3206624_1920.jpg" >
+        <section class="center" data-background-image="images/blockchain-3206624_1920.jpg" >
             <h1>Bitcoin</h1>
             <h2>and the</h2>
             <h1>Blockchain</h1>
@@ -108,7 +108,7 @@
         </section>
 
 
-        <section id="author" data-background-image="images/notebook-2672549_1920.jpg" data-markdown>
+        <section data-background-image="images/notebook-2672549_1920.jpg" data-markdown>
             ## About the author
 
             - Funder member of JUG Torino.
@@ -120,7 +120,7 @@
             properties files.
         </section>
 
-        <section id="abstract" data-background-image="images/notebook-2672467_1280.jpg" data-markdown>
+        <section data-background-image="images/notebook-2672467_1280.jpg" data-markdown>
             ## Agenda
 
             - What is money.
@@ -133,9 +133,9 @@
             - DAO: Decentralized Autonomous Applications.
         </section>
         
-        <section id="definition">
+        <section>
             
-            <section data-background-image="images/money-2991837_1920.jpg" class="center" id="currency-what-is" data-markdown>
+            <section data-background-image="images/money-2991837_1920.jpg" class="center" data-markdown>
                 ## What is a "Currency"
 
                 - Medium of exchange.
@@ -149,7 +149,7 @@
                 - Bitcoin spinge a chiedersi che cos'è la moneta.
             </section>
 
-            <section id="monies-history" data-markdown>
+            <section data-markdown>
                 ## Brief history of monies
 
                 - Barter.
@@ -170,7 +170,7 @@
                 - Friedrich August von Hayek "Denationalization of Money"
             </section>
 
-            <section id="bitcoin-what-is">
+            <section>
                 <h2>What is Bitcoin?</h2>
 
                 <blockquote>
@@ -185,7 +185,7 @@
                 </blockquote>
             </section>
 
-            <section id="blockchain-what-is" data-markdown>
+            <section data-markdown>
                 ## What is the Blockchain?
 
                 - Decentralized Database.
@@ -198,7 +198,7 @@
                 the genesis block (mined by Satoshi Nakamoto on 3rd Jan 2009).
             </section>
 
-            <section id="bitcoin-whats-new" data-markdown>
+            <section data-markdown>
                 ## What's new?
 
                 - Solves the problem of "double spending".
@@ -215,7 +215,7 @@
                 - Resilient: nessuno è mai riuscito a fermarlo, hackerarlo o semplicemente romperlo.
             </section>
 
-            <section id="bitcoin-whats-new-2">
+            <section>
                 <h2>What's new?</h2>
 
                 <p>The first time in history we have a digital asset that can be transferred but cannot be
@@ -235,7 +235,7 @@
 
         </section>
 
-        <section id="bitcoin-in-a-nutshell" data-markdown data-background-image="images/walnut-1739021_1920.jpg">
+        <section data-markdown data-background-image="images/walnut-1739021_1920.jpg">
             ## Bitcoin in a nutshell
 
             - Cryptography.
@@ -255,9 +255,9 @@
               l'emissione, la divisibilità, la fungibilità e gli aspetti quali l'impatto della regolamentazione.
         </section>
 
-        <section id="cryptography">
+        <section>
             
-            <section id="cryptography-definition" data-background-image="images/hacker-2300772_1920.jpg">
+            <section data-background-image="images/hacker-2300772_1920.jpg">
                 <h2>Cryptography</h2>
 
                 <blockquote>
@@ -268,7 +268,7 @@
                 </blockquote>
             </section>
 
-            <section id="cryptography-what-is" data-markdown>
+            <section data-markdown>
                 ## Cryptography
                 
                 Cryptography is a branch of information security.  
@@ -290,7 +290,7 @@
 
             </section>
             
-            <section id="cryptography-simmetric">
+            <section>
                 <h2>Symmetric-key Encryption</h2>
                 
                 <p>The encryption key is shared between Alice and Bob, and they need to keep it secret.</p>
@@ -301,7 +301,7 @@
             </section>
 
             
-            <section id="cryptography-asimmetric-key-1">
+            <section>
                 <h2>Asymmetrical Encryption</h2>
 
                 <p>Alice and Bob will generate two complimentary keys.</p>
@@ -319,7 +319,7 @@
                 </div>
             </section>
 
-            <section id="cryptography-asymmetric-key-2">
+            <section>
                 <h2>Asymmetrical Encryption</h2>
 
                 <p>One key is labeled "Secret Key" and kept safe and secret.</p>
@@ -329,7 +329,7 @@
             </section>
 
 
-            <section id="cryptography-asymmetric-key-3" data-markdown>
+            <section data-markdown>
                 ## Asymmetrical Encryption
 
                 Bob shared his Public Key on the network, so Alice can use it.
@@ -346,7 +346,7 @@
             </section>
 
 
-            <section id="hash-functions" data-markdown>
+            <section data-markdown>
                 ## Criptographic Hash functions
 
                 Hash functions maps data of arbitrary size to a fixed size.
@@ -360,7 +360,7 @@
                 - Un altro esempio è il codice fiscale, l'ultima lettera è calcolata sulla base di tutte le altre.
             </section>
 
-            <section id="hash-functions-properties" data-markdown>
+            <section data-markdown>
                 ## Cryptographic Hash functions
 
                 Properties:
@@ -385,7 +385,7 @@
                 - MD5: Message Digest
             </section>
 
-            <section id="hash-function-example" data-markdown>
+            <section data-markdown>
                 ## Cryptographic Hash functions
 
                 Example:
@@ -407,7 +407,7 @@
                 See: https://anders.com/blockchain/hash.html
             </section>
             
-            <section id="digital-signature" data-markdown>
+            <section data-markdown>
                 ## Digital Signature
                 
                 Combining Cryptographic Hashing with Asymmetric Encryption we can achieve digital signature:
@@ -416,9 +416,45 @@
                 
                 Both authenticity and integrity can be verified by everyone having Alice's Public Key.
                 
+                Note: 
+                
+                It is not necessary to encrypt the message, but just the hash "fingerprint". To verify the signature
+                one can decrypt just the hash value with the public key, then check if that matches with the hash of 
+                the message.
+                
             </section>
+        </section>
 
-            <section id="proof-of-work" data-markdown>
+        <section>
+            <section data-markdown>
+                ## The Ledger
+                
+                The blockchain represents the Ledger, and contains all the transactions since the beginning.
+
+                | From          | To            | Amount  | Signature | 
+                | ------------- | ------------- | ------- | --------- |
+                |  -            | Alice         |   $10   | 010101110 |
+                |  -            | Bob           |    $5   | 101110110 | 
+                |  -            | Charlie       |    $3   | 111010110 |
+                | Alice         | Bob           |    $2   | 101110111 |
+                | Bob           | Charlie       |    $1   | 011000101 |
+            </section>
+            
+            <section data-markdown>
+                ## Transaction
+                
+                A transaction contains basically the same information of a cheque. 
+                
+                ![cheque](images/cheque.jpg)
+
+                But digital signature allows anyone to verify the transaction, immediately and safely.
+            </section>
+            
+            <section>
+                
+            </section>
+            
+            <section data-markdown>
                 ## Proof of Work
 
                 PoW system is security measure to deter denial of service attacks and other service abuses such as
@@ -428,7 +464,7 @@
                 The primary purpose of mining is to allow Bitcoin nodes to reach a secure, tamper-resistant consensus.
             </section>
 
-            <section id="proof-of-work-example" data-markdown>
+            <section data-markdown>
                 ## Proof of Work in practice
 
                 Finding a SHA-256 starting with "00" (difficulty)
@@ -454,14 +490,14 @@
             </section>
         </section>
 
-        <section id="final-notes" data-background-image="images/typewriter-801921_1920.jpg">
-            <section id="credits" data-markdown>
+        <section data-background-image="images/typewriter-801921_1920.jpg">
+            <section data-markdown>
                 ## Credits
 
                 - HTML Presentation Framework: https://revealjs.com
                 - This presentation images: https://pixabay.com
             </section>
-            <section id="references" data-markdown>
+            <section data-markdown>
                 ## References
 
                 - Demo:
@@ -475,7 +511,7 @@
             </section>
         </section>
         
-        <section id="end" data-background-color="">
+        <section data-background-color="">
             <h1>The end</h1>
             <h2>Thanks for your attention!</h2>
         </section>
