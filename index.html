@@ -193,7 +193,7 @@
                 - Records are "Blocks" of transactions, chained together with cryptographic hash.
                 - Blocks are: 
                     - Tamper-proof (verifiable)
-                    - Immutable (permanent)
+                    - Immutable (permanent and unmodifiable)
 
                 Blockchain is a decentralized Ledger containing the full history of transactions of all bitcoin since 
                 the genesis block (mined by Satoshi Nakamoto on 3rd Jan 2009).
@@ -305,7 +305,7 @@
             <section>
                 <h2>Asymmetrical Encryption</h2>
 
-                <p>Alice and Bob will generate two complimentary keys.</p>
+                <p>Alice and Bob will generate two complementary keys.</p>
 
                 <p class="side">
                     <img src="images/crypto-asymmetric-key-2-alice.svg">
@@ -428,28 +428,8 @@
 
         <section>
             <section data-markdown>
-                ## The Ledger / The Blockchain
-
-                The Blockchain contains all the transactions since the beginning.
-
-                | From          | To            | Amount  | Signature |
-                | ------------- | ------------- | ------- | --------- |
-                |  -            | Alice         |   $10   | 010101110 |
-                |  -            | Bob           |    $5   | 101110110 |
-                |  -            | Charlie       |    $3   | 111010110 |
-                | Alice         | Bob           |    $2   | 101110111 |
-                | Bob           | Charlie       |    $1   | 010001001 |
-
+                # Bitcoin Protocol
             </section>
-            
-            <section data-markdown>
-                ## The Blockchain 
-                
-                Every node has a full copy of the blockchain, achieving a decentralized ledger.
-                
-                ![Decentralized Ledger](images/decentralized-ledger.png)
-            </section>
-
             <section data-markdown>
                 ## Transaction
 
@@ -459,7 +439,7 @@
 
                 But digital signature allows anyone to verify the transaction, immediately and safely.
             </section>
-            
+
             <section data-markdown>
                 ## Transaction
 
@@ -470,26 +450,51 @@
                 | Alice         | Bob           |    $2   | 101110111 |
 
                 The transaction goes is transmitted to all the nearest nodes in the bitcoin network and
-                after few seconds every node has a copy of it in the `mempool`. 
+                after few seconds every node has a copy of it in the `mempool`.
             </section>
 
             <section data-markdown>
-                ## Bitcoin Transaction 
+                ## Bitcoin Transaction
 
-                Alice sends 0.8 btc to Bob. 
-                
+                Alice sends 0.8 btc to Bob.
+
                 The change is given back to Alice, and a little amount is given to the miner as fee.
                 ![Transaction](images/transaction.svg)
             </section>
-            
+
             <section data-markdown>
                 ## Bitcoin Transaction
-                
+
                 And here is how real transactions look like on [blockchain.info](https://blockchain.info) website.
-                
+
                 ![Blockchain transaction](images/blockchain-txs.png)
             </section>
 
+            <section data-markdown>
+                ## The Ledger
+
+                The Ledger contains all the transactions since the beginning.
+
+                | From          | To            | Amount  | Signature |
+                | ------------- | ------------- | ------- | --------- |
+                |  -            | Alice         |   $10   | 010101110 |
+                |  -            | Bob           |    $5   | 101110110 |
+                |  -            | Charlie       |    $3   | 111010110 |
+                | Alice         | Bob           |    $2   | 101110111 |
+                | Bob           | Charlie       |    $1   | 010001001 |
+
+                Note:
+                Traduzione di Ledger: Libro Mastro
+            </section>
+            
+            <section data-markdown>
+                ## Decentralized Ledger 
+                
+                Every node has a full copy of the blockchain, achieving a decentralized ledger.
+                
+                ![Decentralized Ledger](images/decentralized-ledger.png)
+            </section>
+            
             <section data-markdown>
                 ## Nodes
                 
@@ -514,7 +519,12 @@
                 Only one of the two nodes will be able to validate the transaction in a block, so Alice won't able to 
                 double spend her money.
             </section>
-            
+        </section>
+        
+        <section>
+            <section data-markdown>
+                # Mining
+            </section>
             <section data-markdown>
                 ## Proof of Work
 
@@ -568,7 +578,7 @@
                     - [A. M. Antonopoulos. Mastering Bitcoin](https://bitcoinbook.info/).
                 - Youtube:
                     - [Andreas M. Antonopoulos](https://www.youtube.com/user/aantonop).
-                    - [Marco Ducci](https://www.youtube.com/channel/UCLvpXvMNTZR06mkJPP50Qsw)
+                    - [Marco Ducci](https://www.youtube.com/channel/UCLvpXvMNTZR06mkJPP50Qsw).
                     - [Ferdinando M. Ametrano](https://www.youtube.com/channel/UCq5tOjw0pZLeoxnqkC5KSHQ).
             </section>
         </section>
