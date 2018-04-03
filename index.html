@@ -96,43 +96,41 @@
 <div class="reveal">
     <div class="slides">
 
-        <section>
-            <section id="cover" class="center" data-background-image="images/blockchain-3206624_1920.jpg" >
-                <h1>Bitcoin</h1>
-                <h2>and the</h2>
-                <h1>Blockchain</h1>
-    
-                <p>Luigi R. Viggiano<br>
-                    <a href="mailto:luigi.viggiano@gmail.com?subject=Bitcoin+and+the+blockchain">&lt;luigi.viggiano@gmail.com&gt;</a><br>
-                    <a href="https://www.linkedin.com/in/viggiano/">https://www.linkedin.com/in/viggiano/</a>
-                </p>
-            </section>
-            <section id="author" data-markdown>
-                ## About the author
+        <section id="cover" class="center" data-background-image="images/blockchain-3206624_1920.jpg" >
+            <h1>Bitcoin</h1>
+            <h2>and the</h2>
+            <h1>Blockchain</h1>
 
-                - Funder member of JUG Torino.
-                - Uses Java since 2000.
-                - Free lance, worked in finance, telecommunications and public administration.
-                - Uses bitcoin since 2016.
-                - Learning blockchain and crypto currencies since November 2017.
-                - Author of [OWNER](http://owner.aeonbits.org), an open source Java configuration library focused on
-                properties files.
-            </section>
+            <p>Luigi R. Viggiano<br>
+                <a href="mailto:luigi.viggiano@gmail.com?subject=Bitcoin+and+the+blockchain">&lt;luigi.viggiano@gmail.com&gt;</a><br>
+                <a href="https://www.linkedin.com/in/viggiano/">https://www.linkedin.com/in/viggiano/</a>
+            </p>
         </section>
 
-        <section id="about" data-background-image="images/notebook-2672467_1280.jpg">
-            <section id="abstract" data-markdown>
-                ## Agenda
 
-                - What is money.
-                - What are bitcoins and what is the blockchain.
-                - How cryptography and distributed networking have been applied in bitcoin.
-                - What are the future potentials of the blockchain, dapp, dao.
+        <section id="author" data-background-image="images/notebook-2672549_1920.jpg" data-markdown>
+            ## About the author
 
-                Note:
-                - DAPP: Decentralized Applications.
-                - DAO: Decentralized Autonomous Applications.
-            </section>
+            - Funder member of JUG Torino.
+            - Uses Java since 2000.
+            - Free lance, worked in finance, telecommunications and public administration.
+            - Uses bitcoin since 2016.
+            - Learning blockchain and crypto currencies since November 2017.
+            - Author of [OWNER](http://owner.aeonbits.org), an open source Java configuration library focused on
+            properties files.
+        </section>
+
+        <section id="abstract" data-background-image="images/notebook-2672467_1280.jpg" data-markdown>
+            ## Agenda
+
+            - What is money.
+            - What are bitcoins and what is the blockchain.
+            - How cryptography and distributed networking have been applied in bitcoin.
+            - What are the future potentials of the blockchain, dapp, dao.
+
+            Note:
+            - DAPP: Decentralized Applications.
+            - DAO: Decentralized Autonomous Applications.
         </section>
         
         <section id="definition">
@@ -324,7 +322,7 @@
             <section id="cryptography-asymmetric-key-2">
                 <h2>Asymmetrical Encryption</h2>
 
-                <p>One key is labeled "Secret Key" and kept safe and secret</p>
+                <p>One key is labeled "Secret Key" and kept safe and secret.</p>
                 <p><img src="images/cryptp-asym-key-handling.svg" alt="key handling"></p>
                 <p>The other key is labeled "Public Key" and is given to everyone.</p>
 
@@ -407,6 +405,17 @@
                 ```
 
                 See: https://anders.com/blockchain/hash.html
+            </section>
+            
+            <section id="digital-signature" data-markdown>
+                ## Digital Signature
+                
+                Combining Cryptographic Hashing with Asymmetric Encryption we can achieve digital signature:
+                
+                ![Digital Signature](images/crypto-digital-signature.svg)
+                
+                Both authenticity and integrity can be verified by everyone having Alice's Public Key.
+                
             </section>
 
             <section id="proof-of-work" data-markdown>
