@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="87 63 670 208" width="670" height="208">
+  <defs>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 8 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="975.0061" descent="-216.99524" font-weight="700">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Bold"/>
+      </font-face-src>
+    </font-face>
+    <linearGradient x1="0" x2="1" id="Gradient" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9e9e9e"/>
+      <stop offset=".45238096" stop-color="#8c8c8c"/>
+      <stop offset="1" stop-color="#797979"/>
+    </linearGradient>
+    <linearGradient id="Obj_Gradient" xl:href="#Gradient" gradientTransform="translate(400.00005 151.25) rotate(90) scale(40)"/>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.7.1 
+    <dc:date>2018-04-03 15:53:29 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="87" y="63" width="670" height="208"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_86">
+        <rect x="87.5" y="63.5" width="669" height="207" fill="white"/>
+        <rect x="87.5" y="63.5" width="669" height="207" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_35">
+        <g id="Group_28">
+          <g id="Graphic_34">
+            <rect x="236.50005" y="135" width="112.50005" height="24" fill="#d6d6d6"/>
+            <text transform="translate(241.50005 140)" fill="#5e5e5e">
+              <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="#5e5e5e" x="0" y="11">Amount</tspan>
+            </text>
+          </g>
+          <g id="Graphic_33">
+            <rect x="236.50005" y="183" width="112.50005" height="24" fill="#f2f2f2"/>
+            <text transform="translate(241.50005 188)" fill="black">
+              <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">1 btc</tspan>
+            </text>
+          </g>
+          <g id="Graphic_32">
+            <text transform="translate(129 164)" fill="black">
+              <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Alice’s Address 1</tspan>
+            </text>
+          </g>
+          <g id="Graphic_31">
+            <rect x="124" y="183" width="112.50005" height="24" fill="#f2f2f2"/>
+            <text transform="translate(129 188)" fill="black">
+              <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Alice’s Address 2</tspan>
+            </text>
+          </g>
+          <g id="Graphic_30">
+            <rect x="124" y="135" width="112.50005" height="24" fill="#d6d6d6"/>
+            <text transform="translate(129 140)" fill="#5e5e5e">
+              <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="#5e5e5e" x="0" y="11">Address</tspan>
+            </text>
+          </g>
+          <g id="Graphic_29">
+            <text transform="translate(241.50005 164)" fill="black">
+              <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">1 btc</tspan>
+            </text>
+          </g>
+        </g>
+        <g id="Graphic_27">
+          <rect x="124" y="135" width="225.0001" height="98.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_26">
+          <rect x="124" y="109" width="225.0001" height="26" fill="white"/>
+          <rect x="124" y="109" width="225.0001" height="26" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(129 112.26794)" fill="black">
+            <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="83.06005" y="16">INPUT</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_85">
+        <g id="Group_76">
+          <g id="Graphic_84">
+            <rect x="595.3456" y="137.5" width="132.65443" height="24" fill="#d6d6d6"/>
+            <text transform="translate(600.3456 142.5)" fill="#5e5e5e">
+              <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="#5e5e5e" x="0" y="11">Amount</tspan>
+            </text>
+          </g>
+          <g id="Graphic_83">
+            <rect x="595.3456" y="185.5" width="132.65443" height="24" fill="#f2f2f2"/>
+            <text transform="translate(600.3456 190.5)" fill="black">
+              <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">1.19 btc</tspan>
+            </text>
+          </g>
+          <g id="Graphic_82">
+            <text transform="translate(443 166.5)" fill="black">
+              <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Bob’s Address 1</tspan>
+            </text>
+          </g>
+          <g id="Graphic_81">
+            <rect x="438" y="185.5" width="157.34557" height="24" fill="#f2f2f2"/>
+            <text transform="translate(443 190.5)" fill="black">
+              <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Alice’s Address 3 (change)</tspan>
+            </text>
+          </g>
+          <g id="Graphic_80">
+            <rect x="438" y="137.5" width="157.34557" height="24" fill="#d6d6d6"/>
+            <text transform="translate(443 142.5)" fill="#5e5e5e">
+              <tspan font-family="Helvetica" font-size="12" font-weight="700" fill="#5e5e5e" x="0" y="11">Address</tspan>
+            </text>
+          </g>
+          <g id="Graphic_79">
+            <text transform="translate(600.3456 166.5)" fill="black">
+              <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">0.8 btc</tspan>
+            </text>
+          </g>
+          <g id="Graphic_78">
+            <text transform="translate(600.3456 214.5)" fill="black">
+              <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">0.01 btc</tspan>
+            </text>
+          </g>
+          <g id="Graphic_77">
+            <text transform="translate(443 214.5)" fill="black">
+              <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">Fee (implicit)</tspan>
+            </text>
+          </g>
+        </g>
+        <g id="Graphic_75">
+          <rect x="438" y="137.5" width="290" height="96" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+        <g id="Graphic_74">
+          <rect x="438" y="109" width="290" height="28.5" fill="white"/>
+          <rect x="438" y="109" width="290" height="28.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(443 113.51794)" fill="black">
+            <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="106.808" y="16">OUTPUT</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_64">
+        <path d="M 380.00005 181.25 L 380.00005 161.25 L 400.00005 161.25 L 400.00005 151.25 L 420.00005 171.25 L 400.00005 191.25 L 400.00005 181.25 Z" fill="url(#Obj_Gradient)"/>
+        <path d="M 380.00005 181.25 L 380.00005 161.25 L 400.00005 161.25 L 400.00005 151.25 L 420.00005 171.25 L 400.00005 191.25 L 400.00005 181.25 Z" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

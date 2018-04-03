@@ -430,7 +430,7 @@
             <section data-markdown>
                 ## The Ledger / The Blockchain
 
-                Every node has a full copy of it. Contains all the transactions since the beginning.
+                The Blockchain contains all the transactions since the beginning.
 
                 | From          | To            | Amount  | Signature |
                 | ------------- | ------------- | ------- | --------- |
@@ -440,6 +440,14 @@
                 | Alice         | Bob           |    $2   | 101110111 |
                 | Bob           | Charlie       |    $1   | 010001001 |
 
+            </section>
+            
+            <section data-markdown>
+                ## The Blockchain 
+                
+                Every node has a full copy of the blockchain, achieving a decentralized ledger.
+                
+                ![Decentralized Ledger](images/decentralized-ledger.png)
             </section>
 
             <section data-markdown>
@@ -464,7 +472,24 @@
                 The transaction goes is transmitted to all the nearest nodes in the bitcoin network and
                 after few seconds every node has a copy of it in the `mempool`. 
             </section>
+
+            <section data-markdown>
+                ## Bitcoin Transaction 
+
+                Alice sends 0.8 btc to Bob. 
+                
+                The change is given back to Alice, and a little amount is given to the miner as fee.
+                ![Transaction](images/transaction.svg)
+            </section>
             
+            <section data-markdown>
+                ## Bitcoin Transaction
+                
+                And here is how real transactions look like on [blockchain.info](https://blockchain.info) website.
+                
+                ![Blockchain transaction](images/blockchain-txs.png)
+            </section>
+
             <section data-markdown>
                 ## Nodes
                 
@@ -489,7 +514,7 @@
                 Only one of the two nodes will be able to validate the transaction in a block, so Alice won't able to 
                 double spend her money.
             </section>
-
+            
             <section data-markdown>
                 ## Proof of Work
 
