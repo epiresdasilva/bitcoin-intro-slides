@@ -84,29 +84,31 @@
 <div class="reveal">
     <div class="slides">
 
-        <section id="cover" class="center" data-background-image="images/blockchain-3206624_1920.jpg" >
-            <h1>Bitcoin</h1>
-            <h2>and the</h2>
-            <h1>Blockchain</h1>
-
-            <p>Luigi R. Viggiano<br>
-                <a href="mailto:luigi.viggiano@gmail.com?subject=Bitcoin+and+the+blockchain">&lt;luigi.viggiano@gmail.com&gt;</a><br>
-                <a href="https://www.linkedin.com/in/viggiano/">https://www.linkedin.com/in/viggiano/</a>
-            </p>
-        </section>
-
-        <section id="about" data-background-image="images/notebook-2672467_1280.jpg">
+        <section>
+            <section id="cover" class="center" data-background-image="images/blockchain-3206624_1920.jpg" >
+                <h1>Bitcoin</h1>
+                <h2>and the</h2>
+                <h1>Blockchain</h1>
+    
+                <p>Luigi R. Viggiano<br>
+                    <a href="mailto:luigi.viggiano@gmail.com?subject=Bitcoin+and+the+blockchain">&lt;luigi.viggiano@gmail.com&gt;</a><br>
+                    <a href="https://www.linkedin.com/in/viggiano/">https://www.linkedin.com/in/viggiano/</a>
+                </p>
+            </section>
             <section id="author" data-markdown>
                 ## About the author
 
                 - Funder member of JUG Torino.
                 - Uses Java since 2000.
                 - Free lance, worked in finance, telecommunications and public administration.
-                - Uses bitcoin since a couple of years.
+                - Uses bitcoin since 2016.
                 - Learning blockchain and crypto currencies since November 2017.
                 - Author of [OWNER](http://owner.aeonbits.org), an open source Java configuration library focused on
-                  properties files.
+                properties files.
             </section>
+        </section>
+
+        <section id="about" data-background-image="images/notebook-2672467_1280.jpg">
             <section id="abstract" data-markdown>
                 ## Agenda
 
@@ -121,8 +123,9 @@
             </section>
         </section>
         
-        <section id="definition" data-background-image="images/money-2991837_1920.jpg">
-            <section class="center" id="currency-what-is" data-markdown>
+        <section id="definition">
+            
+            <section data-background-image="images/money-2991837_1920.jpg" class="center" id="currency-what-is" data-markdown>
                 ## What is a "Currency"
 
                 - Medium of exchange.
@@ -175,7 +178,7 @@
             <section id="blockchain-what-is" data-markdown>
                 ## What is the Blockchain?
 
-                - Distributed Database.
+                - Decentralized Database.
                 - Records are "Blocks" of transactions, chained together with cryptographic hash.
                 - Blocks are: 
                     - Tamper-proof (verifiable)
@@ -242,9 +245,9 @@
               l'emissione, la divisibilità, la fungibilità e gli aspetti quali l'impatto della regolamentazione.
         </section>
 
-        <section id="cryptography" data-background-image="images/hacker-2300772_1920.jpg">
-
-            <section id="cryptography-definition">
+        <section id="cryptography">
+            
+            <section id="cryptography-definition" data-background-image="images/hacker-2300772_1920.jpg">
                 <h2>Cryptography</h2>
 
                 <blockquote>
@@ -282,7 +285,7 @@
                 
                 <p>The encryption key is shared between Alice and Bob, and they need to keep it secret.</p>
                 
-                <p><img src="images/crypto-shared-key.png" alt="crypto-shared-key"></p>
+                <p><img src="images/crypto-shared-key.svg" alt="crypto-shared-key"></p>
 
                 <p class="fragment fade-up">How can they safely exchange the secret shared key?</p>
             </section>
@@ -292,7 +295,7 @@
 
                 Alice needs Bob's public key to encrypt a secret message. Bob can share his public key on the network.
                 
-                ![Asymmetrical Encryption](images/crypto-asymmetric-key.png)
+                ![Asymmetrical Encryption](images/crypto-asymmetric-key.svg)
 
                 Only Bob can decrypt the message with the secret key.
 

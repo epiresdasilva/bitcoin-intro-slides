@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="59.0625 -433.5 352.4375 203.25" width="352.4375" height="203.25">
+  <defs>
+    <font-face font-family="Apple Color Emoji" font-size="38" units-per-em="1000" underline-position="-93.75025" underline-thickness="62.500164" slope="0" x-height="625.00164" cap-height="1000.0026" ascent="1000.0026" descent="-312.50082" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AppleColorEmoji"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Apple Color Emoji" font-size="30" units-per-em="1000" underline-position="-93.75031" underline-thickness="62.50021" slope="0" x-height="625.0021" cap-height="1000.0033" ascent="1000.0033" descent="-312.50104" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AppleColorEmoji"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Apple Color Emoji" font-size="28" units-per-em="1000" underline-position="-93.75033" underline-thickness="62.50022" slope="0" x-height="625.0022" cap-height="1000.0036" ascent="1000.0036" descent="-312.5011" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AppleColorEmoji"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Apple Color Emoji" font-size="18" units-per-em="1000" underline-position="-109.375" underline-thickness="72.91667" slope="0" x-height="729.1667" cap-height="1166.6667" ascent="1166.6667" descent="-364.58333" font-weight="400">
+      <font-face-src>
+        <font-face-name name="AppleColorEmoji"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.7.1 
+    <dc:date>2018-04-03 09:11:49 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="59.0625" y="-433.5" width="352.4375" height="203.25"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Group_18">
+        <g id="Graphic_21">
+          <text transform="translate(64.0625 -319)" fill="black">
+            <tspan font-family="Apple Color Emoji" font-size="38" font-weight="400" fill="black" x="0" y="38">👩🏻‍💼</tspan>
+          </text>
+        </g>
+        <g id="Graphic_20">
+          <text transform="translate(88.0625 -292)" fill="black">
+            <tspan font-family="Apple Color Emoji" font-size="30" font-weight="400" fill="black" x="0" y="30">💌</tspan>
+          </text>
+        </g>
+        <g id="Graphic_19">
+          <text transform="translate(64.0625 -257.724)" fill="black">
+            <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".172" y="15">Alice</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_14">
+        <g id="Graphic_17">
+          <text transform="translate(353.5 -322.25)" fill="black">
+            <tspan font-family="Apple Color Emoji" font-size="38" font-weight="400" fill="black" x="0" y="38">👨🏻‍💼</tspan>
+          </text>
+        </g>
+        <g id="Graphic_16">
+          <text transform="translate(376.5 -294.25)" fill="black">
+            <tspan font-family="Apple Color Emoji" font-size="30" font-weight="400" fill="black" x="0" y="30">💌</tspan>
+          </text>
+        </g>
+        <g id="Graphic_15">
+          <text transform="translate(357.5 -254.474)" fill="black">
+            <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".184" y="15">Bob</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_8">
+        <g id="Graphic_10">
+          <text transform="translate(168.78125 -432.974)" fill="black">
+            <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".32" y="15">Shared Secret Key</tspan>
+          </text>
+        </g>
+        <g id="Graphic_9">
+          <text transform="translate(216.78125 -413.325)" fill="black">
+            <tspan font-family="Apple Color Emoji" font-size="38" font-weight="400" fill="black" x="0" y="38">🗝</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_7">
+        <line x1="112.5625" y1="-310.8248" x2="203.40103" y2="-367.959" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Line_4">
+        <line x1="348.5" y1="-313.23757" x2="268.02052" y2="-366.84886" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Group_24">
+        <g id="Graphic_26">
+          <text transform="translate(218 -313.5)" fill="black">
+            <tspan font-family="Apple Color Emoji" font-size="28" font-weight="400" fill="black" x="0" y="28">✉️</tspan>
+          </text>
+        </g>
+        <g id="Graphic_25">
+          <text transform="translate(231.5625 -304)" fill="black">
+            <tspan font-family="Apple Color Emoji" font-size="18" font-weight="400" fill="black" x="0" y="21">🔒</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_27">
+        <line x1="112.5625" y1="-294.183" x2="203.10023" y2="-294.8023" marker-end="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_28">
+        <line x1="251" y1="-295.30427" x2="338.60127" y2="-296.70714" marker-end="url(#FilledArrow_Marker_2)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_32">
+        <text transform="translate(215.5625 -363)" fill="black">
+          <tspan font-family="Apple Color Emoji" font-size="38" font-weight="400" fill="black" x="0" y="38">🕵🏻</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
