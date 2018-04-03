@@ -76,6 +76,18 @@
         p {
             text-align: justify;
         }
+        .side {
+            text-align: center;
+            margin: 0px !important;
+            padding: 0px !important;
+            border: 0px !important;
+        }
+        .side img { 
+            display: inline;
+            margin: 0px !important;
+            padding: 0px !important;
+            border: 0px !important;
+        }
 
     </style>
 </head>
@@ -289,15 +301,44 @@
 
                 <p class="fragment fade-up">How can they safely exchange the secret shared key?</p>
             </section>
+
             
-            <section id="cryptography-shared-key" data-markdown>
+            <section id="cryptography-asimmetric-key-1">
+                <h2>Asymmetrical Encryption</h2>
+
+                <p>Alice and Bob will generate two complimentary keys.</p>
+
+                <p class="side">
+                    <img src="images/crypto-asymmetric-key-2-alice.svg">
+                    <img src="images/crypto-asymmetric-key-2-bob.svg">
+                </p> 
+                <div class="side fragment fade-up">
+                    <img src="images/crypto-asymmetric-key-3-alice.svg">
+                    <img src="images/crypto-asymmetric-key-3-bob.svg">
+                
+                    <p>What can be encrypted with one key can be decrypted
+                        with the other key.</p>
+                </div>
+            </section>
+
+            <section id="cryptography-asymmetric-key-2">
+                <h2>Asymmetrical Encryption</h2>
+
+                <p>One key is labeled "Secret Key" and kept safe and secret</p>
+                <p><img src="images/cryptp-asym-key-handling.svg" alt="key handling"></p>
+                <p>The other key is labeled "Public Key" and is given to everyone.</p>
+
+            </section>
+
+
+            <section id="cryptography-asymmetric-key-3" data-markdown>
                 ## Asymmetrical Encryption
 
-                Alice needs Bob's public key to encrypt a secret message. Bob can share his public key on the network.
+                Bob shared his Public Key on the network, so Alice can use it.
                 
                 ![Asymmetrical Encryption](images/crypto-asymmetric-key.svg)
 
-                Only Bob can decrypt the message with the secret key.
+                Only Bob can decrypt the message with the Secret Key.
 
                 Note:
                 Bob generate a two keys: a public key and a secret key. 
@@ -305,6 +346,7 @@
                 Alice uses Bob's public key to encrypt the message. 
                 Bob uses his private key to decrypt Alice's message.
             </section>
+
 
             <section id="hash-functions" data-markdown>
                 ## Criptographic Hash functions
