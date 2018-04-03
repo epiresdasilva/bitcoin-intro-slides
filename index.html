@@ -107,30 +107,31 @@
             </p>
         </section>
 
+        <section>
+            <section data-background-image="images/notebook-2672549_1920.jpg" data-markdown>
+                ## About the author
 
-        <section data-background-image="images/notebook-2672549_1920.jpg" data-markdown>
-            ## About the author
+                - Funder member of JUG Torino.
+                - Uses Java since 2000.
+                - Free lance, worked in finance, telecommunications and public administration.
+                - Uses bitcoin since 2016.
+                - Learning blockchain and crypto currencies since November 2017.
+                - Author of [OWNER](http://owner.aeonbits.org), an open source Java configuration library focused on
+                properties files.
+            </section>
 
-            - Funder member of JUG Torino.
-            - Uses Java since 2000.
-            - Free lance, worked in finance, telecommunications and public administration.
-            - Uses bitcoin since 2016.
-            - Learning blockchain and crypto currencies since November 2017.
-            - Author of [OWNER](http://owner.aeonbits.org), an open source Java configuration library focused on
-            properties files.
-        </section>
+            <section data-background-image="images/notebook-2672467_1280.jpg" data-markdown>
+                ## Agenda
 
-        <section data-background-image="images/notebook-2672467_1280.jpg" data-markdown>
-            ## Agenda
+                - What is money.
+                - What are bitcoins and what is the blockchain.
+                - How cryptography and distributed networking have been applied in bitcoin.
+                - What are the future potentials of the blockchain, dapp, dao.
 
-            - What is money.
-            - What are bitcoins and what is the blockchain.
-            - How cryptography and distributed networking have been applied in bitcoin.
-            - What are the future potentials of the blockchain, dapp, dao.
-
-            Note:
-            - DAPP: Decentralized Applications.
-            - DAO: Decentralized Autonomous Applications.
+                Note:
+                - DAPP: Decentralized Applications.
+                - DAO: Decentralized Autonomous Applications.
+            </section>
         </section>
         
         <section>
@@ -427,33 +428,68 @@
 
         <section>
             <section data-markdown>
-                ## The Ledger
-                
-                The blockchain represents the Ledger, and contains all the transactions since the beginning.
+                ## The Ledger / The Blockchain
 
-                | From          | To            | Amount  | Signature | 
+                Every node has a full copy of it. Contains all the transactions since the beginning.
+
+                | From          | To            | Amount  | Signature |
                 | ------------- | ------------- | ------- | --------- |
                 |  -            | Alice         |   $10   | 010101110 |
-                |  -            | Bob           |    $5   | 101110110 | 
+                |  -            | Bob           |    $5   | 101110110 |
                 |  -            | Charlie       |    $3   | 111010110 |
                 | Alice         | Bob           |    $2   | 101110111 |
-                | Bob           | Charlie       |    $1   | 011000101 |
+                | Bob           | Charlie       |    $1   | 010001001 |
+
             </section>
-            
+
             <section data-markdown>
                 ## Transaction
-                
-                A transaction contains basically the same information of a cheque. 
-                
+
+                A transaction contains basically the same information of a cheque.
+
                 ![cheque](images/cheque.jpg)
 
                 But digital signature allows anyone to verify the transaction, immediately and safely.
             </section>
             
-            <section>
-                
+            <section data-markdown>
+                ## Transaction
+
+                Alice sends $2 to Bob, and signs the transaction:
+
+                | From          | To            | Amount  | Signature |
+                | ------------- | ------------- | ------- | --------- |
+                | Alice         | Bob           |    $2   | 101110111 |
+
+                The transaction goes is transmitted to all the nearest nodes in the bitcoin network and
+                after few seconds every node has a copy of it in the `mempool`. 
             </section>
             
+            <section data-markdown>
+                ## Nodes
+                
+                Nodes have a full copy of the blockchain.
+                - Receive the transaction. 
+                - Verify the balance and the signature.
+                - Store in the mempool and propagate to other nodes. (at this point the TX is already irreversible)
+                - Collect the transaction in a block.
+                - Mine the block to secure it in the blockchain.
+                - Transmit the mined block to other nodes.
+                
+                Once the block is in the blockchain, it becomes immutable.
+            </section>
+            
+            <section data-markdown>
+                ## Double Spending
+                
+                Alice has $10 in her balance, but she tries to cheat.
+                
+                ![Double Spending](images/double-spending.svg)
+                
+                Only one of the two nodes will be able to validate the transaction in a block, so Alice won't able to 
+                double spend her money.
+            </section>
+
             <section data-markdown>
                 ## Proof of Work
 
@@ -507,6 +543,7 @@
                     - [A. M. Antonopoulos. Mastering Bitcoin](https://bitcoinbook.info/).
                 - Youtube:
                     - [Andreas M. Antonopoulos](https://www.youtube.com/user/aantonop).
+                    - [Marco Ducci](https://www.youtube.com/channel/UCLvpXvMNTZR06mkJPP50Qsw)
                     - [Ferdinando M. Ametrano](https://www.youtube.com/channel/UCq5tOjw0pZLeoxnqkC5KSHQ).
             </section>
         </section>
