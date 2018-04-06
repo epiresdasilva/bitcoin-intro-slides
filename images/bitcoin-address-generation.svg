@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="52.5 124.54308 568.75696 147.45297" width="568.75696" height="147.45297">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="68" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.7.1 
+    <dc:date>2018-04-06 13:09:16 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="52.5" y="124.54308" width="568.75696" height="147.45297"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_3">
+        <text transform="translate(90 142.6721)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="68" font-weight="400" fill="black" x=".354" y="65">k</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(67.5 237.77205)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".408" y="15">Private Key</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <path d="M 135.10401 208.85548 L 134.38207 159.64087 L 233.71983 158.18365 L 233.38037 135.04308 L 288 182 L 234.78123 230.53883 L 234.44177 207.39826 Z" fill="#68bc36"/>
+        <path d="M 135.10401 208.85548 L 134.38207 159.64087 L 233.71983 158.18365 L 233.38037 135.04308 L 288 182 L 234.78123 230.53883 L 234.44177 207.39826 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(158.5916 162.89608) rotate(-.8404309)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="17.467778" y="11">Elliptic Curve </tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="17.795903" y="25">Multiplication</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="26.133794" y="39">(one way)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6">
+        <text transform="translate(300.5 142.6721)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="68" font-weight="400" fill="black" x=".322" y="65">K</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8">
+        <path d="M 360.36097 208.85548 L 359.63903 159.64087 L 458.9768 158.18365 L 458.63733 135.04308 L 513.25696 182 L 460.0382 230.53883 L 459.69874 207.39826 Z" fill="#68bc36"/>
+        <path d="M 360.36097 208.85548 L 359.63903 159.64087 L 458.9768 158.18365 L 458.63733 135.04308 L 513.25696 182 L 460.0382 230.53883 L 459.69874 207.39826 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(383.95123 169.89532) rotate(-.8404309)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="5.7841844" y="11">Hashing Function</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="26.133794" y="25">(one way)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <text transform="translate(526.25696 142.6721)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="68" font-weight="400" fill="black" x=".468" y="65">A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <text transform="translate(285.5 237.77205)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".42" y="15">Public Key</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <text transform="translate(492.25696 232.276)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".4" y="15">Bitcoin Address</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
