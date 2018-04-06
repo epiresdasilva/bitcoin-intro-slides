@@ -518,7 +518,7 @@
 
                 - The private key is (a random number 2^256) used to sign spending transactions.
                 - The bitcoin address represent the beneficiarys; it is obtained by a hashing algorithm and is represented 
-                  in Base 58, contains a version bit and a checksum.
+                  in Base 58, contains a version digit and a checksum.
                 
                 ![Bitcoin Address Generation](images/bitcoin-address-generation.svg)
 
@@ -529,6 +529,16 @@
 
                 Excerpt From: Andreas M.  Antonopoulos. “Mastering Bitcoin”.
 
+            </section>
+            
+            <section data-markdown>
+                ## Bitcoin Address
+
+                ![hd keys](images/hd-keys.svg)
+
+                - Type 0: Non deterministic Wallets (deprecated). 
+                - Type 1: Deterministic (seeded) Wallets. 
+                - Type 2: Hierarchical Deterministic Wallets. 
             </section>
 
             <section data-markdown>
@@ -690,6 +700,11 @@
         </section>
         
         <section>
+            
+            <section data-markdown>
+                # Using Bitcoin
+            </section>
+            
             <section data-markdown>
                 ## Use cases
                 
@@ -704,8 +719,9 @@
                 - Store of value against inflation Venezuela
                 - Online stores have advantage of lower fee compared to credit card, paypal etc.
             </section>
+            
             <section data-markdown>
-                ## Wallet
+                ## Wallets
                 
                 - Desktop Wallet.
                 - Mobile Wallet.
