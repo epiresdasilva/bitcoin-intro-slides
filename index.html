@@ -532,13 +532,6 @@
             </section>
             
             <section data-markdown>
-                ## Bitcoin Header
-                
-                ![Bitcoin header](images/block-header.png)
-                
-            </section>
-
-            <section data-markdown>
                 ## Blockchain
                 Blocks are chained using hash; altering any part of a block, invalidates all subsequent blocks!
 
@@ -547,6 +540,32 @@
                 See: [blockchain demo](https://anders.com/blockchain/blockchain.html)
             </section>
 
+            <section data-markdown>
+                ## Bitcoin Header
+
+                ![Bitcoin header](images/block-header.png)
+
+                See: [blockchain.info](https://blockchain.info)
+            </section>
+            
+            <section>
+                <h2>Merkle Tree</h2>
+
+                <p>Hash trees allow efficient verification of large data structures.</p> 
+                <p><img src="images/Hash_Tree.svg" alt="Hash Tree" height="400"></p>
+                
+                <aside class="notes">
+                    <ul>
+                        <li>Hash trees are a generalization of hash lists and hash chains.</li>
+    
+                        <li>Demonstrating that a leaf node is a part of a given binary hash tree requires computing a number
+                            of hashes proportional to the logarithm of the number of leaf nodes of the tree; this contrasts
+                            with hash lists, where the number is proportional to the number of leaf nodes itself.</li>
+    
+                        <li>The concept of hash trees is named after Ralph Merkle who patented it in 1979.</li>
+                    </ul>
+                </aside>
+            </section>
 
             <section data-markdown>
                 ## Nodes
