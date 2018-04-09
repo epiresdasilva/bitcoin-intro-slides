@@ -33,7 +33,7 @@
     <![endif]-->
 
     <style type="text/css">
-        h1, h2 {
+        h1, h2, h3 {
             text-shadow: 7px 7px 10px #000000 !important;
         }
 
@@ -50,16 +50,16 @@
             width: 90% !important;
         }
 
-        blockquote div.author {
+        div.author {
             text-align: right;
             margin-right: 10pt;
         }
 
-        blockquote div.author:before {
+        div.author:before {
             content: '(';
         }
 
-        blockquote div.author:after {
+        div.author:after {
             content: ')';
         }
 
@@ -89,6 +89,17 @@
             border: 0px !important;
         }
 
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
 </head>
 
@@ -211,10 +222,10 @@
                 </blockquote>
             </section>
 
-            <section>
+            <section data-background-image="images/zimbabwe-banknotes-100-trillion-dollars-front.jpg">
                 <h2>Why Bitcoin?</h2> 
 
-                <blockquote>
+                <blockquote style="background: rgba(0, 0, 0, 0.5)">
                     <q>The Times 03/Jan/2009 Chancellor on brink of second bailout for banks</q>
                     <div class="author">Satoshi Nakamoto - Genesis Block</div>
                 </blockquote>
@@ -224,10 +235,25 @@
                 </aside>
             </section>
 
-            <section data-markdown>
+            <section data-markdown data-background-image="images/bitcoin-chart.png">
                 ## Brief History of Bitcoin
                 
+                - September 2008 - Bankruptcy of Lehman Brothers.
+                - January 2009 - Bitcoin Genesis Block.
+                - June 2011 - WikiLeaks accepts bitcoins donations.
+                - Dicember 2013 - China crackdown.
+                    - January 2014 - Alibaba stops using bitcoins.
+                - February 2014 - Mt. Gox bankruptcy.
+                - January 2015 - Bitstamp hacked, lost 19k BTC.
+                - August 2016 - Bitfinex hacked, lost 120k BTC.
+                - 2017 - Japan, Russia, USA etc. talk about regulations.
                 
+                Note:
+                - October 2013 - FBI arrests Ross Ulbricht (Silk Road).
+                - China crackdown
+                    - China 2013 world largest bitcoin exchange
+                    - prohibits financial institutions from trading bitcoin
+                    -
             </section>
             
             <section data-markdown>
@@ -278,8 +304,28 @@
                 <p class="fragment fade-up">Digital Gold?</p>
             </section>
 
-            <section data-markdown>
-                ## Bitcoin vs FIAT Currencies
+            <section>
+                    
+                    <div class="row">
+                        <div class="column">
+                            <h2>fiat money</h2>
+                            <ul>
+                                <li>No intrinsic value.</li>
+                                <li>Paper and ink security.</li>
+                                <li>Discretionary governance.</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h2>bitcoin</h2>
+                            <ul>
+                                <li>No intrinsic value.</li>
+                                <li>Cryptography security.</li>
+                                <li>Algorithmic governance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="author">F.M. Ametrano</div>
+                    
             </section>
 
             <section data-markdown>
