@@ -159,6 +159,7 @@
 
                 Note:
                 - Bitcoin spinge a chiedersi che cos'è la moneta.
+                - La moneta è un sistema scritturale che dice chi possiede del valore.
             </section>
             
             <section data-markdown>
@@ -662,17 +663,16 @@
             </section>
 
             <section data-markdown>
-                ## Nodes
+                ## Network
                 
-                Nodes have a full copy of the blockchain.
-                - Receive the transaction. 
-                - Verify the balance and the signature.
-                - Store in the `mempool` and propagate to other nodes. (at this point the TX is already irreversible)
-                - Collect the transaction in a block.
-                - Mine the block to secure it in the blockchain.
-                - Transmit the mined block to other nodes.
+                1. New transactions are broadcast to all nodes.
+                2. Each node collects new transactions into a block.
+                3. Each node works on a proof-of-work for its block.
+                4. When a node finds a proof-of-work, it broadcasts the block.
+                5. Nodes accept the block only if all transactions in it are valid and not already spent.
+                6. Nodes express their acceptance of the block by working on creating the next block.
                 
-                Once the block is in the blockchain, it becomes immutable.
+                Blocks in the blockchain become immutable.
             </section>
 
             <section data-markdown>
