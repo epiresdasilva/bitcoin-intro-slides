@@ -100,6 +100,9 @@
             display: table;
             clear: both;
         }
+        .small {
+            font-size: 32px !important;
+        }
     </style>
 </head>
 
@@ -254,24 +257,32 @@
                 </aside>
             </section>
 
-            <section data-markdown data-background-image="images/bitcoin-chart.png">
-                ## Brief History of Bitcoin
-                
-                - September 2008 - Bankruptcy of Lehman Brothers.
-                - January 2009 - Bitcoin Genesis Block.
-                - June 2011 - WikiLeaks accepts bitcoins donations.
-                - October 2013 - FBI arrests Ross Ulbricht (Silk Road).
-                - Dicember 2013 - China crackdown.
-                    - January 2014 - Alibaba stops using bitcoins.
-                - February 2014 - Mt. Gox bankruptcy, lost 850k btc.
-                - January 2015 - Bitstamp hacked, lost 19k btc.
-                - August 2016 - Bitfinex hacked, lost 120k btc.
-                - 2017 - Japan, Russia, USA etc. talk about regulations.
-                
-                Note:
-                - China crackdown
-                    - China 2013 world largest bitcoin exchange
-                    - prohibits financial institutions from trading bitcoin
+            <section data-background-image="images/bitcoin-chart.png">
+                <h2>Brief History of Bitcoin</h2>
+
+                <ul class="small">
+                    <li>September 2008 - Bankruptcy of Lehman Brothers.</li>
+                    <li>January 2009 - Bitcoin Genesis Block.</li>
+                    <li>June 2011 - WikiLeaks accepts bitcoins donations.</li>
+                    <li>October 2013 - FBI arrests Ross Ulbricht (Silk Road).</li>
+                    <li>Dicember 2013 - China crackdown.</li>
+                    <ul>
+                        <li>January 2014 - Alibaba stops using bitcoins.</li>
+                    </ul>
+                    <li>February 2014 - Mt. Gox bankruptcy, lost 850k btc.</li>
+                    <li>January 2015 - Bitstamp hacked, lost 19k btc.</li>
+                    <li>August 2016 - Bitfinex hacked, lost 120k btc.</li>
+                    <li>2017 - Japan, Russia, USA and others talk about regulations.</li>
+                    <li>Dicember 2017 - Bitcoin futures CBOE and CME quoted on Chicago Stock Exchange.</li>
+                </ul>
+
+                <aside class="notes">
+                    China crackdown
+                    <ul>
+                        <li>China 2013 world largest bitcoin exchange</li>
+                        <li>prohibits financial institutions from trading bitcoin</li> 
+                    </ul>
+                </aside>
             </section>
             
             <section data-markdown>
@@ -350,7 +361,7 @@
                 <div class="row" >
                     <div class="column">
                         <h3>gold</h3>
-                        <ul style="font-size: 32px">
+                        <ul class="small">
                             <li>Its adoption was not centrally planned.</li>
                             <li>For centuries, the most successful form of money.</li>
                             <li>It has bootstrapped all monetary systems we know of.</li>
@@ -359,7 +370,7 @@
                     </div>
                     <div class="column">
                         <h3>bitcoin</h3>
-                        <ul style="font-size: 32px">
+                        <ul class="small">
                             <li>Its adoption was not centrally planned.</li>
                             <li>It is the most successful crypto currency.</li>
                             <li>It will bootstrap new monetary systems.</li>
@@ -831,11 +842,11 @@
                 
                 Bitcoin network goal is to add a new block every 10 minutes.
                 
-                - Miner compete to be the first to generate new blocks, upgrading the hardware and increasing the 
-                  overall Hash Rate.
+                - Miners compete to be the first one to generate a new block. They need investing upgrading the 
+                  hardware and increasing the overall Hash Rate.
                 
                 - Every 2 weeks (2016 blocks) the difficulty is adjusted calculating the new difficulty to 
-                  *retarget* the network to have a new block every 10 minutes.
+                  *retarget* the network to have a new block every 10 minutes, constantly.
             </section>
             <section>
                 <h2>Mininig Difficulty</h2>
