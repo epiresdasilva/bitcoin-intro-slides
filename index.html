@@ -150,20 +150,37 @@
         </section>
         
         <section>
+            <section data-background-image="images/money-2991837_1920.jpg" >
+                <h1>Money</h1>
+                <blockquote style="background: rgba(0,0,0,0.5)">
+                    <q>The main functions of money are distinguished as:
+                        <ul>
+                            <li>a medium of exchange;</li> 
+                            <li>a unit of account; </li>
+                            <li>a store of value; </li>
+                            <li>and, sometimes, a standard of deferred payment.</li>
+                        </ul>
+                        Any item or verifiable record that fulfills these functions can be considered as money.</q>
+                    <div class="author">Wikipedia</div>
+                </blockquote>
+
+                <aside class="notes">
+                    La moneta è un sistema scritturale che dice chi possiede del valore.
+                    Example: gold, cash bills, bank accounts.
+                </aside>
+
+            </section>
             
-            <section data-background-image="images/money-2991837_1920.jpg" class="center" data-markdown>
-                ## What is a "Currency"
-
-                - Medium of exchange.
-                - Measure of value.  
-                  (providing a unit of value)
-                - Store of value.
-
-                Example: gold, cash bills, bank accounts.
-
-                Note:
-                - Bitcoin spinge a chiedersi che cos'è la moneta.
-                - La moneta è un sistema scritturale che dice chi possiede del valore.
+            <section data-markdown>
+                ## Money
+                
+                To fulfill its various functions, money must have certain properties:
+                
+                - Fungibility: its individual units must be capable of mutual substitution (i.e., interchangeability).
+                - Durability: able to withstand repeated use.
+                - Portability: easily carried and transported.
+                - Cognizability: its value must be easily identified.
+                - Stability of value: its value should not fluctuate.
             </section>
             
             <section data-markdown>
@@ -191,7 +208,7 @@
 
         <section>
             <section data-markdown data-background-image="images/bitcoin-3264045_1920.jpg">
-                ## Bitcoin in a nutshell
+                # Bitcoin 
                 
                 - Cryptography.
                 - Distributed Networking.
@@ -388,7 +405,7 @@
         <section>
             
             <section data-background-image="images/matrix-2354492.jpg">
-                <h2>Cryptography</h2>
+                <h1>Cryptography</h1>
 
                 <blockquote>
                     <q>Cryptography is the practice of techniques for secure communication in the presence of third parties
@@ -496,8 +513,8 @@
                 Properties:
                 - Deterministic.
                 - Quick to compute.
-                - Infeasible to reverse and unpredictable.
-                - Small change on the input => complete different hash value.
+                - Infeasible to reverse.
+                - Unpredictable: small change on the input => complete different output.
                 - Resistant to collision.
 
                 Popular hash functions: MD5, SHA, DSA.  
@@ -777,7 +794,7 @@
         
         <section>
             <section data-background-image="images/coal-1626368_1920.jpg">
-                <h2>Mining</h2>
+                <h1>Mining</h1>
                 
                 <blockquote>
                     <q>Mining is the process to add new blocks of transactions in the block chain.</q>
@@ -799,7 +816,7 @@
             <section>
                 <h2>Mining</h2>
 
-                <p>Miners are paid for their work with `transaction` fees and a `reward`:
+                <p>Miners are paid for their work with <em>transaction fees</em> and a <em>reward</em>:
                     new bitcoins emission.</p>
 
                 <p><img src="images/controlled-supply.png" height="300"/></p>
