@@ -41,17 +41,17 @@ In case of copyright infringement please contact the author immediately.
 DONATIONS
 ---------
 
-Your support, is the acknowledgment of the value of this work and help my projects running.
-Donations are welcome.gitgit
+Your support, is the acknowledgment of the value of this work and helps it running and improving.
+Donations are welcome.
 
 
-![Donate bitcoin:13uCFs6zoHC1Q2tiHUsFq7LFrGWGu4D2hG](https://raw.githubusercontent.com/lviggiano/bitcoin-intro-slides/gh-pages/images/13uCFs6zoHC1Q2tiHUsFq7LFrGWGu4D2hG.png)  
+<img alt="Donate bitcoin:13uCFs6zoHC1Q2tiHUsFq7LFrGWGu4D2hG" src="https://raw.githubusercontent.com/lviggiano/bitcoin-intro-slides/gh-pages/images/13uCFs6zoHC1Q2tiHUsFq7LFrGWGu4D2hG.png" height="150" width="150" />
+
 bitcoin:13uCFs6zoHC1Q2tiHUsFq7LFrGWGu4D2hG
 
 [![Donate with PayPal](https://www.paypalobjects.com/webstatic/en_US/i/btn/png/gold-rect-paypal-26px.png)](https://www.paypal.me/lviggiano)
 
-
-
+Thank you!
 
 ----
 
