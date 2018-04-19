@@ -36,7 +36,7 @@ COPYRIGHT
 This content can be used and distributed according to the [LICENSE](https://raw.githubusercontent.com/lviggiano/bitcoin-intro-slides/gh-pages/LICENSE).
 
 Images are produced by me, or have been downloaded from pixabay.com as royalty free. 
-In case of copyright infringement please contact the author immediately.
+In case of copyright infringement please contact me immediately, and I will remove the offending content.
 
 DONATIONS
 ---------
