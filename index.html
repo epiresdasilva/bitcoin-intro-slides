@@ -581,6 +581,29 @@
             </section>
 
             <section data-markdown>
+                ## Transaction
+
+                A transaction contains basically the same information of a cheque.
+
+                ![cheque](images/cheque.jpg)
+
+                But digital signature allows anyone to verify the transaction, immediately and safely.
+            </section>
+
+            <section data-markdown>
+                ## Transaction
+
+                Alice sends $2 to Bob, and signs the transaction:
+
+                | From          | To            | Amount  | Signature |
+                | ------------- | ------------- | ------- | --------- |
+                | Alice         | Bob           |    $2   | 101110111 |
+
+                The transaction is transmitted to all the nearest nodes in the bitcoin network and
+                after few seconds every node has a copy of it in the `mempool`.
+            </section>
+
+            <section data-markdown>
                 ## The Ledger
 
                 The Ledger contains all the transactions since the beginning.
@@ -605,29 +628,6 @@
                 ![Decentralized Ledger](images/decentralized-ledger.png)
             </section>
             
-            <section data-markdown>
-                ## Transaction
-
-                A transaction contains basically the same information of a cheque.
-
-                ![cheque](images/cheque.jpg)
-
-                But digital signature allows anyone to verify the transaction, immediately and safely.
-            </section>
-
-            <section data-markdown>
-                ## Transaction
-
-                Alice sends $2 to Bob, and signs the transaction:
-
-                | From          | To            | Amount  | Signature |
-                | ------------- | ------------- | ------- | --------- |
-                | Alice         | Bob           |    $2   | 101110111 |
-
-                The transaction is transmitted to all the nearest nodes in the bitcoin network and
-                after few seconds every node has a copy of it in the `mempool`.
-            </section>
-
             <section data-markdown>
                 ## Double Entry Bookkeeping
                 
@@ -715,6 +715,7 @@
                 See: [blockchain.info](https://blockchain.info)
             </section>
             
+            <!--
             <section>
                 <h2>Merkle Tree</h2>
 
@@ -733,6 +734,7 @@
                     </ul>
                 </aside>
             </section>
+            -->
 
             <section data-markdown>
                 ## Network
