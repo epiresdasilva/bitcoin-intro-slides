@@ -14,7 +14,7 @@
 
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/league.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,11 +40,15 @@
         div.slides {
             text-shadow: 3px 3px 1px #1c1e20 !important;
         }
-        
+
+        a {
+          color: #f48634 !important;
+        }
+
         blockquote {
             background: rgba(180, 180, 180, 0.2);
         }
-        
+
         blockquote {
             text-align: left;
             width: 90% !important;
@@ -82,7 +86,7 @@
             padding: 0px !important;
             border: 0px !important;
         }
-        .side img { 
+        .side img {
             display: inline;
             margin: 0px !important;
             padding: 0px !important;
@@ -110,20 +114,26 @@
 <div class="reveal">
     <div class="slides">
 
-        <section class="center" data-background-image="images/blockchain-3206624_1920.jpg" >
+        <section class="center">
+            <h2>Afinal,</h2>
             <h1>Bitcoin</h1>
-            <h2>and the</h2>
-            <h1>Blockchain</h1>
+            <h2>é uma moeda ou um ativo?</h2>
 
-            <p>Luigi R. Viggiano<br>
-                <a href="mailto:luigi.viggiano@gmail.com?subject=Bitcoin+and+the+blockchain">&lt;luigi.viggiano@gmail.com&gt;</a><br>
-                <a href="https://www.linkedin.com/in/viggiano/">https://www.linkedin.com/in/viggiano/</a>
+            <p>Evandro Pires da Silva<br>
+                <a href="mailto:evandro@evandropires.com.br?subject=Bitcoin+and+the+blockchain">&lt;evandro@evandropires.com.br&gt;</a><br>
+                <a href="https://www.linkedin.com/in/epiresdasilva/">https://www.linkedin.com/in/epiresdasilva/</a>
             </p>
+
+            <aside class="notes" data-markdown>
+              - Blockchain é a base das criptomoedas em geral
+              - Leandro deu um nivelamento sobre blockchain importante
+              - Esse título é para trazer essa discussão pra nós, pra respondermos juntos
+            </aside>
         </section>
-        
+
         <section data-markdown class="center">
-            ## About this presentation
-            
+            ## Sobre essa apresentação
+
             How to navigate:
             - space bar: next slide
             - n: next, p: previous
@@ -137,120 +147,114 @@
         </section>
 
         <section>
-            <section data-background-image="images/notebook-2672549_1920.jpg" data-markdown>
-                ## About the author
+            <section data-markdown>
+                ## Sobre o autor
 
-                - Funder member of JUG Torino.
-                - Uses Java since 2000.
-                - Free lance, worked in finance, telecommunications and public administration.
-                - Uses bitcoin since Jul-2015.
-                - Learning blockchain and crypto currencies since November 2017.
-                - Author of [OWNER](http://owner.aeonbits.org), an open source Java configuration library focused on
-                properties files.
+                - Programador desde os 12 anos ( aprendi com Clipper :D ).
+                - Trabalho com Java desde 2005.
+                - Arquiteto de Sistemas e Empreendedor/Intraempreendedor.
+                - Amo trabalhar com TI, é exatamente o que gosto de fazer.
+                - Estudando blockchain e cripto moedas desde 2018.
             </section>
 
-            <section data-background-image="images/notebook-2672467_1280.jpg" data-markdown>
+            <section data-markdown>
                 ## Agenda
 
-                - What is money.
-                - What are bitcoins and what is the blockchain.
-                - How cryptography and distributed networking have been applied in bitcoin.
-                - What is mining.
-                - What is the current status and the future potentials of the blockchain.
-
-                Note:
-                - DAPP: Decentralized Applications.
-                - DAO: Decentralized Autonomous Applications.
+                - O que é dinheiro/moeda.
+                - O que são bitcoins e o que é blockchain.
+                - Como criptografia e rede distribuida são utilizadas no bitcoin.
+                - Bitcoin pelo mundo
+                - Momento de Reflexão!
             </section>
         </section>
-        
+
         <section>
-            <section data-background-image="images/money-2991837_1920.jpg" >
-                <h1>Money</h1>
+            <section data-background-image="images/money-2991837_1920.jpg" data-markdown>
+                # Dinheiro / Moeda
+
+                Notes:
+                - Antes de começar, alguém aqui já investe em criptomoedas? ou já leu e mexeu sobre?
+                - Ótimo
+                - Antes de começar a falar em criptomoedas temos que falar um pouco sobre dinheiro/moeda para entendermos os conceitos
             </section>
             <section data-markdown>
-                ## Brief history of monies
+                ## Resumo da história das moedas
 
-                - Barter.
-                - Rare metals, minerals.
-                - Gold/Silver/Bronze coins.
-                - Adoption of the Gold Standard (1821-1900).
-                - Banknote (convertible to gold).
-                - Fractional-reserve.
-                - "Fiat Money" (end of Gold Standard, Richard Nixon in 1971).
+                - Troca/Escambo
+                - Metais raros, minerais.
+                - Moedas de Ouro/Prata/Bronze.
+                - Adoção do Gold Standard (1821-1900).
+                - Nota de banco (passível de conversão em ouro).
+                - Reserva fracionária.
+                - "Fiat Money" (fim do Gold Standard, Richard Nixon em 1971).
 
                 Note:
-                - baratto
-                - oro, argento, diamanti (gold standard)
-                - monete d'oro (circolazione aurea) garantite dall'imperatore, giulio cesare (primo caso di inflazione)
-                - nota di banco (convertibile in oro)
-                - riserva frazionaria (in Europa l'1% è la riserva obbligatoria)
-                - abolizione del gold standard -> "Fiat Money", Moneta fiduciaria senza copertura
-                - Friedrich August von Hayek "Denationalization of Money"
+                - Troca: No início não havia moeda, praticava-se o escambo, simples troca de mercadoria por mercadoria, sem equivalência de valor.
+                - Metal: Era trocado sob as formas mais diversas. A princípio, em seu estado natural, depois sob a forma de barras e, ainda, sob a forma de objetos, como anéis, braceletes etc.
+                - Moedas: Surgem, então, no século VII a.C., as primeiras moedas com características das atuais: são pequenas peças de metal com peso e valor definidos e com a impressão do cunho oficial, isto é, a marca de quem as emitiu e garante o seu valor.
+                - Gold Standard: sistema monetário baseado em uma quantia fixa de ouro. É utilizar o ouro como lastro para o dinheiro.
+                - Nota de banco (passível de conversão em ouro). É o dinheiro e o banco era obrigado a converter o dinheiro em ouro quando o cliente quisesse.
+                - Reserva mínima obrigatório que os bancos tem que ter para crédito
+                - Moeda fiduciária: Moeda fiduciária é qualquer título não-conversível, ou seja, não é lastreado a nenhum metal (ouro, prata) e não tem nenhum valor intrínseco. Seu valor advém da confiança que as pessoas têm em quem emitiu o título.
             </section>
 
             <section>
-                <h2>Money Functions</h2>
+                <h2>Funções do Dinheiro</h2>
                 <blockquote style="background: rgba(0,0,0,0.5)">
-                    <q>The main functions of money are distinguished as:
+                    <q>As principais funções do dinheiro são descritas como:<br>
                         <ul>
-                            <li>a medium of exchange;</li> 
-                            <li>a unit of account; </li>
-                            <li>a store of value; </li>
-                            <li>and, sometimes, a standard of deferred payment.</li>
+                            <li>um meio de troca;</li>
+                            <li>uma unidade de conta; </li>
+                            <li>uma reserva de valor; </li>
                         </ul>
-                        Any item or verifiable record that fulfills these functions can be considered as money.</q>
+                        Qualquer item ou registro verificável que atenda a essas funções pode ser considerado como dinheiro.</q>
                     <div class="author">Wikipedia</div>
                 </blockquote>
 
-                <aside class="notes">
-                    La moneta è un sistema scritturale che dice chi possiede del valore.
-                    Example: gold, cash bills, bank accounts.
+                <aside class="notes" data-markdown>
+                  - Meio de troca: A moeda é o instrumento intermediário de aceitação geral, para ser recebido em contrapartida da cessão de um bem e entregue na aquisição de outro bem (troca indireta em vez de troca direta). Isto significa que a moeda serve para solver débitos e é um meio de pagamento geral.
+                  - Unidade de conta: Permite contabilizar ou exprimir numericamente os ativos e os passivos, os haveres e as dívidas.
+                  - Reserva de valor: A moeda pode ser utilizada para acumulação de poder aquisitivo, a usar no futuro.
                 </aside>
+            </section>
 
-            </section>
-            
             <section data-markdown>
-                ## Money Properties
-                
-                To fulfill its various functions, money must have certain properties:
-                
-                - Fungibility: its individual units must be capable of mutual substitution (i.e., interchangeability).
-                - Durability: able to withstand repeated use.
-                - Portability: easily carried and transported.
-                - Divisibility: can be divided into small increments that can be exchanged for goods of varying values.
-                - Cognizability: its value must be easily identified.
-                - Stability of value: its value should not fluctuate.
+                ## Propriedades do dinheiro
+
+                - Fungibilidade: suas unidades individuais devem ser capazes de substituição mútua.
+                - Durabilidade: capaz de suportar o uso repetido.
+                - Portabilidade: facilmente carregado e transportada.
+                - Divisibilidade: pode ser dividido em pequenos incrementos que podem ser trocados por bens de valores variados.
+                - Conhecibilidade: seu valor deve ser facilmente identificado.
+                - Estabilidade de valor: seu valor não deve flutuar.
+
+                Note:
+                - Fungibilidade: O dinheiro é o bem fungível por excelência, dado que quando se empresta uma quantia a alguém (por exemplo, R$100,00), não se está exigindo de volta aquelas mesmas cédulas, mas sim um valor, que pode ser pago com quaisquer notas de Real (moeda).
             </section>
-            
+
         </section>
 
         <section>
             <section data-markdown data-background-image="images/bitcoin-3264045_1920.jpg">
-                # Bitcoin 
-                
-                - Cryptography.
-                - Distributed Networking.
-                - Game Theory.
-                - Economic Theory.
-                
+                # Bitcoin
+
+                - Criptografia.
+                - Rede distribuída.
+                - Teoria de jogos.
+                - Teoria econômica.
+
                 Note:
-                Il protocollo è l'insieme di regole utilizzate per gestire la comunicazione e lavorare le transazioni.
-                
-                - Crittografia coinvolge gli aspetti legati alla privacy delle informazioni, alla integrità e alla non 
-                  ripudiabilità.
-                - Distributed networking coinvolge lo scambio di informazioni in una rete decentralizzata, e il consenso 
-                  su queste informazioni, per costruire un Libro Mastro (Ledger) su cui tutti sono d'accordo su chi 
-                  possiede quanti bitcoin (o relativi asset su altre blockchain).
-                - Game theory, coinvolge le regole implementate in bitcoin affinché ogni giocatore tragga vantaggio dal 
-                  seguire le regole, e uno svantaggio in caso in cui cerchi di imbrogliare.
-                  Rif: John Nash, John Nash.
-                - La teoria economica legata a bitcoin riguarda gli aspetti intrinseci e sociali della moneta come 
-                  l'emissione, la divisibilità, la fungibilità e gli aspetti quali l'impatto della regolamentazione.
+                Agora que já falamos sobre as características do dinheiro já estamos mais preparados para falar de criptomoeda/bitcoin.
+
+                - O protocolo é o conjunto de regras usadas para gerenciar transações de comunicação e trabalho.
+                - A criptografia envolve questões relacionadas à privacidade e integridade.
+                - A rede distribuída envolve a troca de informações em uma rede descentralizada e o consentimento sobre esta informação, para construir um livro (Ledger) em que todos concordam sobre quem tem tantos bitcoins (ou ativos relacionados em outros blockchains).
+                - Teoria dos jogos, envolve as regras implementadas em bitcoins para cada jogador aproveitar siga as regras e uma desvantagem no caso de você tentar enganar. Ref .: John Nash, John Nash.
+                - A teoria econômica ligada aos bitcoins diz respeito aos aspectos intrínsecos e sociais do dinheiro emissão, divisibilidade, fungibilidade e aspectos como o impacto da regulação.
             </section>
-            
+
             <section>
-                <h2>What is Bitcoin?</h2>
+                <h2>O que é Bitcoin?</h2>
 
                 <blockquote>
                     <q>First decentralized digital currency.</q>
@@ -262,421 +266,176 @@
                         from one party to another without going through a financial institution.</q>
                     <div class="author">Satoshi Nakamoto - the bitcoin whitepaper</div>
                 </blockquote>
-            </section>
 
-            <section>
-                <h2>Why Bitcoin?</h2>
-                
-                <blockquote>
-                    <q>The Times 03/Jan/2009 Chancellor on brink of second bailout for banks</q>
-                    <div class="author">Satoshi Nakamoto - Genesis Block</div>
-                </blockquote>
-                
-                <p><img src="images/bitcoin-historic-newspaper.jpg"></p>
-                
-                <aside class="notes">
-                    Traduzione: Cancelliere sull'orlo del secondo piano di salvataggio per le banche.
-                </aside>
-            </section>
-            
-            <section data-background-image="images/zimbabwe-banknotes-100-trillion-dollars-front.jpg">
-                <h2>Why Bitcoin?</h2> 
-                
-                <blockquote style="background: rgba(0,0,0,0.6)">
-                    <q>We can win a major battle in the arms race and gain a new territory of freedom for  
-                        several years.<br><br>
-                        Governments are good at cutting off the heads of a centrally controlled networks like Napster, 
-                        but pure P2P networks like Gnutella and Tor seem to be holding their own.</q>
-                    <div class="author">Satoshi Nakamoto</div>
-                </blockquote>
-                
-                <aside class="notes">
-                    Traduzione:
-                    Possiamo vincere una grande battaglia nella corsa agli armamenti e conquistare un nuovo territorio di libertà per diversi anni.
-                    I governi sono bravi a tagliare le teste di reti controllate centralmente come Napster, ma le reti P2P come Gnutella e Tor sembrano tenere le proprie.
+                <aside class="notes" data-markdown>
+                  - Primeira moeda digital descentralizada
+                  - Uma versão puramente peer-to-peer de dinheiro eletrônico que permite que pagamentos on-line sejam enviados diretamente
+                  de uma parte para outra sem passar por uma instituição financeira.
                 </aside>
             </section>
 
             <section data-background-image="images/bitcoin-chart.png">
-                <h2>Brief History of Bitcoin</h2>
+                <h2>Resumo da história do Bitcoin</h2>
 
                 <ul class="small">
-                    <li>September 2008 - Bankruptcy of Lehman Brothers.</li>
-                    <li>January 2009 - Bitcoin Genesis Block.</li>
-                    <li>June 2011 - WikiLeaks accepts bitcoins donations.</li>
-                    <li>October 2013 - FBI arrests Ross Ulbricht (Silk Road).</li>
-                    <li>December 2013 - China crackdown.</li>
+                    <li>Setembro 2008 - Falência do Lehman Brothers.</li>
+                    <li>Janeiro 2009 - Bitcoin Genesis Block.</li>
+                    <li>Junho 2011 - WikiLeaks aceita doações com bitcoin.</li>
+                    <li>Outubro 2013 - O FBI prende Ross Ulbricht (Rota da Seda).</li>
+                    <li>Dezembro 2013 - Repressão na China.</li>
                     <ul>
-                        <li>January 2014 - Alibaba stops using bitcoins.</li>
+                        <li>Janeiro 2014 - Alibaba para de utilizar bitcoins.</li>
                     </ul>
-                    <li>February 2014 - Mt. Gox bankruptcy, lost 850k btc.</li>
-                    <li>January 2015 - Bitstamp hacked, lost 19k btc.</li>
-                    <li>August 2016 - Bitfinex hacked, lost 120k btc.</li>
-                    <li>2017 - Japan, Russia, USA and others talk about regulations.</li>
-                    <li>December 2017 - Bitcoin futures CBOE and CME quoted on Chicago Stock Exchange.</li>
+                    <li>Fevereiro 2014 - Falência do Mt. Gox, perde 850k btc.</li>
+                    <li>Janeiro 2015 - Bitstamp hackeada, perde 19k btc.</li>
+                    <li>Agosto 2016 - Bitfinex hackeda, perde 120k btc.</li>
+                    <li>2017 - Japão, Rússia, EUA e outros países falam sobre regulações.</li>
+                    <li>Dezembro 2017 - Futuros de Bitcoin CBOE e CME cotados na Bolsa de Valores de Chicago.</li>
                 </ul>
 
-                <aside class="notes">
-                    China crackdown
+                <aside class="notes" data-markdown>
+                    Repressão na China
                     <ul>
-                        <li>China 2013 world largest bitcoin exchange</li>
-                        <li>prohibits financial institutions from trading bitcoin</li> 
+                        <li>China 2013 a maior troca de bitcoin do mundo</li>
+                        <li>proíbe instituições financeiras de negociar bitcoin</li>
                     </ul>
                 </aside>
             </section>
-            
-            <section data-markdown>
-                ## What is the Blockchain?
 
-                - Decentralized Database.
-                - Records are "Blocks" of transactions
-                    - Tamper-proof (verifiable)
-                    - Immutable (permanent and unmodifiable)
+            <section data-markdown>
+              ## O que há de novo?
+
+              - Resolve o problema de "gastos duplos".
+              - Descentralizado.
+              - Confiável: sem instituições financeiras, governos ...
+              - Resistente à censura.
             </section>
 
             <section data-markdown>
-                ## What's new?
+              ## O que há de novo?
 
-                - Solves the problem of "double spending".
-                - Decentralized.
-                - Trustless: no financial institutions, governments...
-                - Censorship resistant.
-            </section>
-            
-            <section data-markdown>
-                ## What's new?
-                
-                - Resilient and Secure.
-                - Permissionless 
-                    - instant 
-                    - low cost bank for everyone 
-                    - 24/7 365 days/year.
-                - Transnational, borderless.
+              - Resiliente e seguro.
+              - Sem permissão
+                - Instantâneo
+                - Banco de baixo custo para todos
+                - 24/7, 365 dias/ano.
+              - Globalizado, sem fronteiras.
 
                 Note:
-                - Il "double spending" in una rete decentralizzata e asincrona è da sempre considerato non un problema
-                difficile da risolvere, ma impossibile.
-                - Resilient: nessuno è mai riuscito a fermarlo, hackerarlo o semplicemente romperlo.
+                - "Gastos duplos" em uma rede descentralizada e assíncrona sempre foram considerados não um problema difícil de resolver, mas impossível.
+                - Resiliente: ninguém conseguiu parar, cortar ou apenas quebrá-lo.
             </section>
-            
+
             <section data-markdown class="center">
-                ## What's new?
+                ## O que há de novo?
 
-                Bitcoin is
-                - Asset, not liability.
-                - Scarce.
-                    - Emission mimics gold extraction.
-                - Divisible.
-                - Durable. 
+                Bitcoin é
+                - Ativo.
+                - Escasso.
+                  - Emissão imita a extração de ouro.
+                - Divisível.
+                - Durável.
             </section>
 
             <section>
-                <h2>What's new?</h2>
+                <h2>O que há de novo?</h2>
 
-                <p>The first time in history we have a digital asset that can be transferred but cannot be
-                    duplicated.</p>
-                <p class="fragment fade-up">Gold 2.0?</p>
-            </section>
-            
-            <section data-markdown>
-                ## Bitcoin vs FIAT Money vs Gold
-
-                | Functions          | Gold | FIAT Money | Bitcoin |
-                |--------------------|------|------------|---------|
-                | Medium of exchange |  OK  |     OK     |   OK    |
-                | Unit of account    |  OK  |     OK     |   OK    | 
-                | Store of value     |  OK  |     OK     |   OK    | 
-
+                <p>A primeira vez na história, temos um ativo digital que pode ser transferido, mas não pode ser duplicado.</p>
+                <p class="fragment fade-up">Ouro 2.0?</p>
             </section>
 
             <section data-markdown>
-                ## Bitcoin vs FIAT Money vs Gold /2
+                ## Bitcoin vs FIAT Money vs Ouro
 
-                | Properties         | Gold | FIAT Money | Bitcoin |
+                | Funções          | Ouro | FIAT Money | Bitcoin |
                 |--------------------|------|------------|---------|
-                | Fungibility        |  +   |     ++     |   +++   |
-                | Durability         |  ++  |      +     |    ++   |
-                | Portability        |  -   |      +     |    ++   |
-                | Divisibility       |  +   |     ++     |   +++   |
-                | Cognizability      |  -   |      +     |    ++   |
-                | Stability          |  ++  |      +     |     -   |
-
-                Note: 
-                - Fungibility: its individual units must be capable of mutual substitution (i.e., interchangeability).
-                - Durability: able to withstand repeated use.
-                - Portability: easily carried and transported.
-                - Divisibility: can be divided into small increments that can be exchanged for goods of varying values.
-                - Cognizability: its value must be easily identified.
-                - Stability of value: its value should not fluctuate.
-
+                | Meio de troca |  OK  |     OK     |   OK    |
+                | Unidade de conta    |  OK  |     OK     |   OK    |
+                | Reserva de valor     |  OK  |     OK     |   OK    |
             </section>
-            
+
             <section data-markdown class="small">
-                ## Bitcoin vs FIAT Money vs Gold /3
+                ## Bitcoin vs FIAT Money vs Ouro #2
 
-                | Characteristics | Gold         | FIAT Money    | Bitcoin      |
+                | Propriedades         | Ouro | FIAT Money | Bitcoin |
+                |--------------------|------|------------|---------|
+                | Fungibilidade        |  +   |     ++     |   +++   |
+                | Durabilidade         |  ++  |      +     |    ++   |
+                | Portabilidade        |  -   |      +     |    ++   |
+                | Divisibilidade       |  +   |     ++     |   +++   |
+                | Conhecibilidade      |  -   |      +     |    ++   |
+                | Estabilidade          |  ++  |      +     |     -   |
+
+                Note:
+                - Fungibilidade: suas unidades individuais devem ser capazes de substituição mútua.
+                - Durabilidade: capaz de suportar o uso repetido.
+                - Portabilidade: facilmente carregado e transportada.
+                - Divisibilidade: pode ser dividido em pequenos incrementos que podem ser trocados por bens de valores variados.
+                - Conhecibilidade: seu valor deve ser facilmente identificado.
+                - Estabilidade de valor: seu valor não deve flutuar.
+            </section>
+
+            <section data-markdown class="small">
+                ## Bitcoin vs FIAT Money vs Ouro #3
+
+                | Características | Ouro         | FIAT Money    | Bitcoin      |
                 |-----------------|--------------|---------------|--------------|
-                | Intrinsic value | None         | None          | None         |
-                | Security        | Chemical     | Paper & Ink   | Cryptography |
-                | Emission        | Availability | Discretionary | Algorithmic  |
-                | Adoption        | Voluntary    | Legal         | Voluntary    |
-
-            </section>
-            
-            <!--
-            <section>
-                <h2>Bitcoin vs Gold</h2>
-                <div class="row" >
-                    <div class="column">
-                        <h3>gold</h3>
-                        <ul class="small">
-                            <li>Its adoption was not centrally planned.</li>
-                            <li>For centuries, the most successful form of money.</li>
-                            <li>It has bootstrapped all monetary systems we know of.</li>
-                            <li>It has been surpassed by other kind of money without becoming obsolete.</li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h3>bitcoin</h3>
-                        <ul class="small">
-                            <li>Its adoption was not centrally planned.</li>
-                            <li>It is the most successful crypto currency.</li>
-                            <li>It will bootstrap new monetary systems.</li>
-                            <li>It might be surpassed by more advanced crypto currency without becoming obsolete.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            -->
-
-        </section>
-
-        <section>
-            
-            <section data-background-image="images/matrix-2354492.jpg">
-                <h1>Cryptography</h1>
-
-                <blockquote>
-                    <q>Cryptography is the practice of techniques for secure communication in the presence of third parties
-                        called adversaries. More generally, cryptography is about constructing and analyzing protocols that
-                        prevent third parties or the public from reading private messages.</q>
-                    <div class="author">Wikipedia</div>
-                </blockquote>
-            </section>
-
-            <section data-markdown>
-                ## Cryptography
-                
-                Cryptography is a branch of information security.  
-                
-                - Privacy => Encryption.
-                - Integrity => Digest, Digital Fingerprint.
-                - Non-repudiation => Digital Signature.
-                
-                Note:
-                - La privacy riguarda il fatto che io devo poter trasmettere informazioni confidenziali ad un 
-                  destinatario prevenendo che queste informazioni siano lette da persone non autorizzate. Questo
-                  problema attiene alla cifratura dei messaggi.
-                - L'integrità riguarda il contenuto di un messaggio, e cioè posso confidare sul fatto che le 
-                  informazioni non siano state alterate da un nemico. 
-                - La non ripudiabilità riguarda il fatto che una volta che so che un messaggio è non è stato nè 
-                  intercettato nè alterato da un nemico, questo messaggio possa essere attribuito al mio 
-                  interlocutore con certezza e quindi non possa essere ripudiato. Questo argomento è pertinente quindi 
-                  alla firma digitale.
-
-            </section>
-            
-            <section>
-                <h2>Symmetric-key Encryption</h2>
-                
-                <p>The encryption key is shared between Alice and Bob, and they need to keep it secret.</p>
-                
-                <p><img src="images/crypto-shared-key.svg" alt="crypto-shared-key"></p>
-
-                <p class="fragment fade-up">How can they safely exchange the secret shared key?</p>
-            </section>
-
-            
-            <section>
-                <h2>Asymmetrical Encryption</h2>
-
-                <p>Alice and Bob will generate two complementary keys.</p>
-
-                <p class="side">
-                    <img src="images/crypto-asymmetric-key-2-alice.svg">
-                    <img src="images/crypto-asymmetric-key-2-bob.svg">
-                </p> 
-                <div class="side fragment fade-up">
-                    <img src="images/crypto-asymmetric-key-3-alice.svg">
-                    <img src="images/crypto-asymmetric-key-3-bob.svg">
-                
-                    <p>What can be encrypted with one key can be decrypted
-                        with the other key.</p>
-                </div>
-            </section>
-
-            <section data-markdown>
-                ## Asymmetrical Encryption
-
-                The "Secret Key" is kept safe and secret.
-                
-                ![Key Handling](images/crypto-asym-key-handling.svg)
-                
-                The other key is the "Public Key" and is given to everyone.
-
-            </section>
-
-            <section data-markdown>
-                ## Asymmetrical Encryption
-
-                Bob shared his Public Key on the network, so Alice can use it.
-                
-                ![Asymmetrical Encryption](images/crypto-asymmetric-key.svg)
-
-                Only Bob can decrypt the message with the Secret Key.
+                | Valor intrínseco | None         | None          | None         |
+                | Segurança        | Química     | Papel e tinta   | Criptografia |
+                | Emissão        | Disponibilidade | Discricionário | Algorítmico  |
+                | Adoção        | Voluntário    | Legal         | Voluntário    |
 
                 Note:
-                Bob generate a two keys: a public key and a secret key. 
-                Bob gives Alice his public key on the public network. 
-                Alice uses Bob's public key to encrypt the message. 
-                Bob uses his private key to decrypt Alice's message.
+                - Discricionário: livre de condições, de restrições; arbitrário, discricional, ilimitado.
             </section>
 
-            <section data-markdown>
-                ## Criptographic Hash functions
-
-                Hash functions maps data of arbitrary size to a fixed size.
-
-                ![Hash function](images/hash-functions.png)
-
-                They are used to create "digests" or "fingerprints" for data integrity.
-
-                Note:
-                - Un esempio di controllo di integrità è il controllo di parità o il check-sum.
-                - Un altro esempio è il codice fiscale, l'ultima lettera è calcolata sulla base di tutte le altre.
-            </section>
-
-            <section data-markdown>
-                ## Cryptographic Hash functions
-
-                Properties:
-                - Deterministic.
-                - Quick to compute.
-                - Infeasible to reverse.
-                - Unpredictable: small change on the input => complete different output.
-                - Resistant to collision.
-
-                Popular hash functions: MD5, SHA, DSA.  
-                Bitcoin uses SHA-256 (32 bytes output, [2^256 possible  combination](https://www.youtube.com/watch?v=S9JGmA5_unY)).
-
-                Note:
-                - deterministic: dato un input viene prodotto sempre lo stesso output
-                - infeasible to reverse: dev'essere impossibile, dato un hash ottenere il messaggio originale
-                  L'unico modo dev'essere il brute force.
-                - small change: idealmente, cambiando un bit nel messaggio originale ogni bit nel valore dell'hash
-                  dovrebbe avere il 50% di possibilità di cambiare.
-                - collision: due input diversi non devono mai generare lo stesso hash
-                - SHA: Secure Hash Algorithm
-                - DSA: Digital Signature Algorithm
-                - MD5: Message Digest
-            </section>
-
-            <section data-markdown>
-                ## Cryptographic Hash functions
-
-                Example:
-
-                ```bash
-                $ echo -n "Vires in numeris." | md5
-                82e556facfe79ad4e31851f310284756
-
-                $ echo -n "Vires in numeris." | shasum -a 256
-                663dbafd847734a61d5e87b84988455e8920c470931c38d1a10b1cc4783e61d6 -
-
-                $ echo -n "Vires in numeris. 1" | shasum -a 256
-                e93fa18d3dd5cd416388de277a2e270c0cbd4eeeb62fceae84727492d722a8fa -
-
-                $ echo -n "Vires in numeris. 2" | shasum -a 256
-                651becf6a431285a350abf62537bece3b438a3a88e9eea6b8fb5554a85026508 -
-                ```
-
-                See: [SHA-256 demo](https://anders.com/blockchain/hash.html)
-            </section>
-            
-            <section data-markdown>
-                ## Digital Signature
-                
-                Combining Cryptographic Hashing with Asymmetric Encryption we can achieve digital signature:
-                
-                ![Digital Signature](images/crypto-digital-signature.svg)
-                
-                Both authenticity and integrity can be verified by everyone having Alice's Public Key.
-                
-                Note: 
-                
-                It is not necessary to encrypt the message, but just the hash "fingerprint". To verify the signature
-                one can decrypt just the hash value with the public key, then check if that matches with the hash of 
-                the message.
-                
-            </section>
         </section>
 
         <section>
             <section data-markdown data-background-image="images/bitcoin-1813503_1920.jpg">
-                ## The
-                # Bitcoin Protocol
+                ## O protocolo
+                # Bitcoin
             </section>
 
             <section data-markdown>
-                ## Transaction
+                ## Transação
 
-                A transaction contains basically the same information of a cheque.
+                A transação contém basicamente a mesma informação que um cheque.
 
                 ![cheque](images/cheque.jpg)
 
-                But digital signature allows anyone to verify the transaction, immediately and safely.
+                A assinatura digital permite que qualquer um verifique a transação imediatamente e com segurança.
             </section>
 
             <section data-markdown>
-                ## Transaction
+                ## Transação
 
-                Alice sends $2 to Bob, and signs the transaction:
+                Alice envia $2 para Bob e assina a transação:
 
-                | From          | To            | Amount  | Signature |
+                | De          | Para            | Valor  | Assinatura |
                 | ------------- | ------------- | ------- | --------- |
                 | Alice         | Bob           |    $2   | 101110111 |
 
-                The transaction is transmitted to all the nearest nodes in the bitcoin network and
-                after few seconds every node has a copy of it in the `mempool`.
-            </section>
-
-            <section data-markdown>
-                ## Double Entry Bookkeeping
-
-                Example: Alice sends 0.8 btc to Bob.
-
-                ![Transaction](images/transaction.svg)
-
-                The change is given back to Alice, and a little amount is given to the miner as fee.
+                A transação é transmitida para todos os nós da rede do bitcoin e depois de alguns segundos todos os nós tem uma cópia dele na `mempool`.
 
                 Note:
-                - Double Entry Bookkeeping: in Italiano Partita Doppia: dare (input) avere (output).
+                - Mempool é a área onde as transações não validadas ficam
             </section>
 
             <section data-markdown>
-                ## Bitcoin Transaction
+                ## Transação Bitcoin
 
-                And here is how real transactions look like on [blockchain.info](https://blockchain.info) website.
+                Aqui é como uma transação real se parece no [blockchain.info](https://blockchain.info) website.
 
                 ![Blockchain transaction](images/blockchain-txs.png)
             </section>
 
             <section data-markdown>
-                ## The Ledger
+                ## O Livro
 
-                The Ledger contains all the transactions since the beginning.
+                O Livro contém todas as transações desde o início.
 
-                | From          | To            | Amount  | Signature |
+                | De          | Para            | Valor  | Assinatura |
                 | ------------- | ------------- | ------- | --------- |
                 |  -            | Alice         |   $10   | 010101110 |
                 |  -            | Bob           |    $5   | 101110110 |
@@ -685,291 +444,72 @@
                 | Bob           | Charlie       |    $1   | 010001001 |
 
                 Note:
-                Traduzione di Ledger: Libro Mastro
+                Livro mestre/contábil
             </section>
-            
-            <section data-markdown>
-                ## Decentralized Ledger
 
-                Every node has a full copy of the blockchain, achieving a decentralized ledger.
+            <section data-markdown>
+                ## Livro descentralizado
+
+                Todo nó tem uma cópia total da blockchain, tornando um livro descentralizado.
 
                 ![Decentralized Ledger](images/decentralized-ledger.png)
             </section>
-            
-            <section class="center">
-                <h2>Bitcoin Address</h2>
-                
-                <p><img src="images/bitcoin-address.png" alt="Bitcoin Address"></p>
-                
-                <p>Generated by <a href="https://www.bitaddress.org">bitaddress.org</a>.</p>
-            </section>
-            
-            <section data-markdown>
-                ## Bitcoin Address
 
-                - The private key is (a random number &lt;2^256) used to sign spending transactions.
-                - The bitcoin address represent the beneficiarys; it is obtained by a hashing algorithm and is represented 
-                  in Base 58, contains a version digit and a checksum.
-                
+            <section class="center">
+                <h2>Endereço Bitcoin</h2>
+
+                <p><img src="images/bitcoin-address.png" alt="Bitcoin Address"></p>
+
+                <p>Gerado por <a href="https://www.bitaddress.org">bitaddress.org</a>.</p>
+            </section>
+
+            <section data-markdown>
+                ## Endereço Bitcoin
+
+                - A chave privada é (um número randômico &lt;2^256) usado para assinar transações de gastos.
+                - O endereço bitcoin representa os beneficiários; ele é obtido por um algoritmo de hash e é representado na Base 58, contém um dígito de versão e uma soma de verificação.
+
                 ![Bitcoin Address Generation](images/bitcoin-address-generation.svg)
 
-                
                 Note:
-                - 2^256 is a large number, ~ 10^77 in decimal, (the visible universe is 10^80 atoms.)
-                - Base 56 is used to make it compact and easier to read.
-
-                Excerpt From: Andreas M.  Antonopoulos. “Mastering Bitcoin”.
-
+                - Base 58 is used to make it compact and easier to read.
             </section>
-            
-            <section class="center">
-                <h2>Bitcoin Address</h2>
 
-                <p><img alt="hd keys" src="images/hd-keys.svg" height="300"></p>
-
-                <p><ul>
-                    <li>Type 0: Non deterministic Wallets (deprecated).</li>
-                    <li>Type 1: Deterministic (seeded) Wallets.</li> 
-                    <li>Type 2: Hierarchical Deterministic Wallets.</li> 
-                </ul></p>
-                <p>See: <a href="https://iancoleman.io/bip39/">Mnemonic code converter</a>.</p>
-            </section>
-            
             <section data-markdown>
-                ## Block
+                ## Bloco
 
-                Blocks contain transactions and header information. 
+                O Bloco contém transações e um cabeçalho de informação.
 
                 ![Block](images/block.png)
 
-                When the proper hash is calculated, the block can be appended in the blockchain.
-            </section>
-            
-            <section data-markdown>
-                ## Blockchain
-                Blocks are chained using hash; altering any part of a block, invalidates all subsequent blocks!
-
-                ![Blockchain](images/blockchain.png)
-
-                See: [blockchain demo](https://anders.com/blockchain/blockchain.html)
+                Quando o hash apropriado é calculado, o bloco pode ser anexado ao blockchain.
             </section>
 
-            <section data-markdown>
-                ## Bitcoin Header
-
-                ![Bitcoin header](images/block-header.png)
-
-                See: [blockchain.info](https://blockchain.info)
-            </section>
-            
-            <section>
-                <h2>Merkle Tree</h2>
-
-                <p>Merkle Tree, or Hash Trees, allow efficient verification of large data structures.</p> 
-                <p><img src="images/Hash_Tree.svg" alt="Hash Tree" height="400"></p>
-                
-                <aside class="notes">
-                    <ul>
-                        <li>Hash trees are a generalization of hash lists and hash chains.</li>
-    
-                        <li>Demonstrating that a leaf node is a part of a given binary hash tree requires computing a number
-                            of hashes proportional to the logarithm of the number of leaf nodes of the tree; this contrasts
-                            with hash lists, where the number is proportional to the number of leaf nodes itself.</li>
-    
-                        <li>The concept of hash trees is named after Ralph Merkle who patented it in 1979.</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section data-markdown>
-                ## Network
-                
-                1. New transactions are broadcast to all nodes.
-                2. Each node collects new transactions into a block.
-                3. Each node works on a proof-of-work for its block.
-                4. When a node finds a proof-of-work, it broadcasts the block.
-                5. Nodes accept the block only if all transactions in it are valid and not already spent.
-                6. Nodes express their acceptance of the block by working on creating the next block.
-                
-                Blocks in the blockchain become immutable.
-            </section>
-
-            <section data-markdown>
-                ## Double Spending
-                
-                Alice has $10 in her balance, but she tries to cheat.
-                
-                ![Double Spending](images/double-spending.svg)
-                
-                Only one of the two nodes will be able to validate the transaction in a block, so Alice won't able to 
-                double spend her money.
-            </section>
-            
-            <section data-markdown>
-                ## Blockchain Fork
-
-                Different parties need to use common rules to maintain the history of the blockchain.
-                
-                - A blockchain diverges into two potential paths forward.
-                - A change in protocol.
-                    - Hard Fork (change in rules, nodes need an update)
-                    - Soft Fork (change in rules, backward compatible)
-
-                Note:
-                - Hard Fork: change in rules, old nodes need an update because they'll refuse new blocks.
-                - Soft Fork: change in rules, old node will accept new blocks; new nodes may or may not accept old blocks.
-                - [User Activated Soft Fork] (http://www.uasf.co/)
-                - Miner Activated Soft Fork
-            </section>
-            
-            <section data-markdown>
-                ## Blockchain Fork
-
-                Two miner generate two different blocks at the same time.  
-
-                ![Blockchain Fork](images/blockchain-fork.svg)
-
-                Two (or more) blocks have the same block height.
-            </section>
-
-            <section>
-                <h2>Blockchain Consensus</h2>
-
-                <p><img alt="Blockchain Fork Resolution" src="images/blockchain-fork-2.svg" height="300"></p>
-
-                <p>Miners will work on the longest chain; the shorter chain are quickly invalidated.  
-                    The network will reach the consensus in few blocks. 
-                    Every new block added is basically a confirmation over the previous ones.</p>
-            </section>
-            
         </section>
-        
-        <section>
-            <section data-background-image="images/coal-1626368_1920.jpg">
-                <h1>Mining</h1>
-                
-                <blockquote>
-                    <q>Mining is the process to add new blocks of transactions in the block chain.</q>
-                </blockquote>
-            </section>
-            
-            <section data-markdown>
-                ## Mining
-                
-                Mining is intentionally designed to be resource consuming, but quick to verify. 
-                
-                - Verify the transactions (balance, signatures, etc).
-                - Determine the consensus over the network, and prevent double spending.
-                - Securing the block chain, making computationally impractical to be modified by anyone.
 
-                Mining is a competitive task: the first who mines a new block wins.
-            </section>
-            
-            <section>
-                <h2>Mining</h2>
-
-                <p>Miners are paid for their work with <em>transaction fees</em> and a <em>reward</em>:
-                    new bitcoins emission.</p>
-
-                <p><img src="images/controlled-supply.png" height="300"/></p>
-                
-                <p>This decreasing-supply algorithm approximates the rate at which commodities like gold are mined.</p>
-            </section>
-            
-            <section data-markdown>
-                ## Proof of Work
-
-                PoW system is security measure to deter denial of service attacks and other service abuses such as
-                spam on a network by requiring some work from the service requester.
-
-                PoW is a technique used to secure the blockchain using SHA-256, this process is called "mining".
-                The primary purpose of mining is to allow Bitcoin nodes to reach a secure, tamper-resistant consensus.
-            </section>
-
-            <section data-markdown>
-                ## Proof of Work in practice
-
-                Finding a SHA-256 starting with "00" (difficulty)
-
-                ```bash
-                $ echo -n "Vires in numeris. 1" | shasum -a 256
-                e93fa18d3dd5cd416388de277a2e270c0cbd4eeeb62fceae84727492d722a8fa -
-
-                $ echo -n "Vires in numeris. 2" | shasum -a 256
-                651becf6a431285a350abf62537bece3b438a3a88e9eea6b8fb5554a85026508 -
-
-                ...
-
-                $ echo -n "Vires in numeris. 174" | shasum -a 256
-                0051d0c37a3326411c9a4d2d338494c602ed6cb3d6e65bc9089ab2e08793ad53
-                ```
-
-                The more leading zeroes you require, the harder is to find a matching solution.
-                Difficulty is exponential: 2^n, where n=number of bits.
-
-                Note:
-                The "00" is expressed in hexadecimal, so it means 00000000 in binary.
-            </section>
-            
-            <section data-markdown>
-                ## Mining Difficulty
-                
-                Bitcoin network goal is to add a new block every 10 minutes.
-                
-                - Miners compete to be the first one to generate a new block. They need investing upgrading the 
-                  hardware and increasing the overall Hash Rate.
-                
-                - Every 2 weeks (2016 blocks) the difficulty is adjusted calculating the new difficulty to 
-                  *retarget* the network to have a new block every 10 minutes, constantly.
-            </section>
-            <section>
-                <h2>Mininig Difficulty</h2>
-                <p><img src="images/hash-difficulty.png" height="550"></p>
-            </section>
-            
-            <section data-background-image="images/farm-2852024_1920.jpg">
-                <h2>Mining</h2>
-                
-                <div style="background: rgba(0, 0, 0, 0.4); padding: 15px">
-                    <p>Having a higher hash power advantages one miner over the others; mining industry developed more energy
-                        and cost efficient strategies over the years:</p>
-                    <p>
-                        <ul class="small">
-                            <li>CPU.</li>
-                            <li>GPU (graphic cards, 400x-800x faster than CPU mining, up to 2,100 Mhash/sec).</li>
-                            <li>FPGA (Field-programmable gate array, up to 25,200 Mhash/sec).</li>
-                            <li>ASIC (Application-specific integrated circuit, up to 18,000,000 Mhash/sec).</li>
-                            <li>Pooled mining.</li>
-                        </ul>
-                    </p>
-                </div>
-            </section>
-        </section>
-        
         <section>
             <section data-markdown data-background-image="images/shopping-1920.jpg">
-                # Using Bitcoin
+                # Utilizando o Bitcoin
             </section>
-            
+
             <section data-markdown>
-                ## Use cases
-                
-                - International remittance.
-                - Store of value.
-                - Online payments.
-                - Charity.
-                - Mining.
-                - Micro payments. (Lightning Network)
-                
+                ## Casos de uso
+
+                - Remessa internacional.
+                - Reserva de valor.
+                - Pagamentos online.
+                - Caridade/Doação.
+                - Mineração.
+
                 Note:
-                - International remittance: A remittance is a transfer of money by a foreign worker to an individual in his or her home country
-                - Store of value against inflation Venezuela
-                - Online stores have advantage of lower fee compared to credit card, paypal etc.
+                - Remessa internacional: uma remessa é uma transferência de dinheiro por um trabalhador estrangeiro para um indivíduo em seu país de origem
+                - Reserva de valor contra a inflação Venezuela
+                - Lojas on-line têm vantagem de menor taxa em comparação com cartão de crédito, paypal etc.
             </section>
-            
+
             <section>
                 <h2>Wallets</h2>
-                
+
                 <div class="row">
                     <div class="column">
                         <h3>Hot storage</h3>
@@ -992,36 +532,42 @@
                     </div>
                 </div>
             </section>
-            
+
             <section>
                 <h2>Web Wallets</h2>
                 <p><img src="images/coinbase-wallet.png" height="400"></p>
             </section>
 
-            <section>
+            <section class="small">
                 <h2>Web Wallets</h2>
                 <div class="row">
                     <div class="column">
                         <h3>pros</h3>
                         <ul>
-                            <li>Ease of use.</li>
-                            <li>Accessible from any device.</li>
-                            <li>Usually linked with exchange services.</li>
+                            <li>Fácil de usar.</li>
+                            <li>Acessível de qualquer dispositivo.</li>
+                            <li>Geralmente vinculado a serviços de troca.</li>
                         </ul>
                     </div>
                     <div class="column">
                         <h3>cons</h3>
                         <ul>
-                            <li>Private keys are on someone else's server.</li>
-                            <li>Prone to hackers.</li>
-                            <li>Website management can suspend and control your account.</li>
-                            <li>You rely on someone's else security.</li>
+                            <li>Chaves privadas estão no servidor de outra pessoa.</li>
+                            <li>Propenso a hackers.</li>
+                            <li>O gerenciamento de websites pode suspender e controlar sua conta.</li>
+                            <li>Você confia na segurança de outra pessoa.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="center">TIP: Always use 2FA.</div>
+                <p>
+                <div class="center">TIP: Sempre use 2FA.</div>
+                <aside class="notes">
+                    <ul>
+                        <li>2FA: Two factor authentication</li>
+                    </ul>
+                </aside>
             </section>
-            
+
             <section class="center">
                 <h2>Software Wallets</h2>
                 <p>
@@ -1036,17 +582,17 @@
                     <div class="column">
                         <h3>pros</h3>
                         <ul>
-                            <li>More secure than online wallets.</li>
-                            <li>You have control over your money.</li>
-                            <li>Easy for everyday usage and practical to carry.</li>
-                            <li>You can backup by yourself.</li>
+                            <li>Mais seguro do que os web wallets.</li>
+                            <li>Você tem o controle sobre seu dinheiro.</li>
+                            <li>Fácil para o uso diário e prático de transportar.</li>
+                            <li>Você pode fazer backup sozinho.</li>
                         </ul>
                     </div>
                     <div class="column">
                         <h3>cons</h3>
                         <ul>
-                            <li>Vulnerable to malwares, virus, and hackers.</li>
-                            <li>The device can be lost or stolen or incur in an hardware failure.</li>
+                            <li>Vulnerável a malwares, vírus e hackers.</li>
+                            <li>O dispositivo pode ser perdido ou roubado ou incorrer em uma falha de hardware.</li>
                         </ul>
                     </div>
                 </div>
@@ -1066,17 +612,17 @@
                     <div class="column">
                         <h3>pros</h3>
                         <ul>
-                            <li>More secure than software wallets and online wallets.</li>
-                            <li>Always off-line (when properly handled) cannot be hacked.</li>
-                            <li>Easy to backup.</li>
+                            <li>Mais seguro que software wallets e web wallets.</li>
+                            <li>Sempre off-line (quando corretamente manipulado) não pode ser hackeado.</li>
+                            <li>Fácil backup.</li>
                         </ul>
                     </div>
                     <div class="column">
                         <h3>cons</h3>
                         <ul>
-                            <li>They can get damaged with time, water, fire...</li>
-                            <li>They can get stolen.</li>
-                            <li>They need to be generated offline; some technical knowledge is necessary.</li>
+                            <li>Eles podem ficar danificados com o tempo, a água, o fogo...</li>
+                            <li>Eles podem ser roubados.</li>
+                            <li>Eles precisam ser gerados offline; algum conhecimento técnico é necessário.</li>
                         </ul>
                     </div>
                 </div>
@@ -1097,151 +643,119 @@
                     <div class="column">
                         <h3>pros</h3>
                         <ul>
-                            <li>Most secure.</li>
-                            <li>Can be backed up.</li>
-                            <li>Password protected.</li>
-                            <li>Minimal risk to hacking.</li>
+                            <li>Mais seguro.</li>
+                            <li>Pode ser feito backup.</li>
+                            <li>Protegido por senha.</li>
+                            <li>Risco mínimo para hacking.</li>
                         </ul>
                     </div>
                     <div class="column">
                         <h3>cons</h3>
                         <ul>
-                            <li>Cost.</li>
-                            <li>Not very easy for everyday usage.</li>
+                            <li>Custo.</li>
+                            <li>Não é muito fácil para o uso diário.</li>
                         </ul>
                     </div>
                 </div>
             </section>
-
-
         </section>
-        
+
         <section>
-            <section data-background-image="images/skyline-night-668457_1920.jpg">
-                <h1>Future blockchains</h1>    
-            </section>
-            
             <section>
-                <h2>Where are we today?</h2>
-                
+              <a href="images/termos_criptomoedas.jpeg"><h2>Termos comuns</h2></a>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h1>Bitcoin no mundo</h1>
+            </section>
+
+            <section>
+                <h2>Banco Central do Brasil</h2>
                 <p>
-                <ul>
-                    <li>Currencies.
-                        <ul>
-                            <li>Privacy coin.</li>
-                        </ul>
-                    </li>
-                    <li>Developer Tools, Smart contracts, Platforms.</li>
-                    <li>Content Monetization, Distributed Computing.</li>
-                    <li>Trading, Insurance, Lending, Investing, Value Exchange.</li>
-                    <li>Governance, Healthcare, Identity.</li>
-                    <li>Others: Products Tracking and Food Traceability, Smart Properties, Gaming, Gambling, Sports.</li>
-                </ul>
+                  "estas (moedas virtuais) não são emitidas nem garantidas por qualquer autoridade monetária, por isso não têm garantia de conversão para moedas soberanas, e tampouco são lastreadas em ativo real de qualquer espécie, ficando todo o risco com os detentores. Seu valor decorre exclusivamente da confiança conferida pelos indivíduos ao seu emissor"
                 </p>
+                <p>Veja: <a href="http://www.bcb.gov.br/pre/normativos/busca/normativo.asp?numero=31379&tipo=Comunicado&data=16/11/2017">Comunicado nº 31.379, de 16/11/2017</a>.</p>
                 <aside class="notes">
                     <ul>
-                        <li>Bitcoin, Litecoin
-                            <ul>
-                                <li>Monero, Zcash</li>
-                            </ul>
-                        </li>
-                        <li>Ethereum, NEO</li>
-                        <li>Maidsafe, Steem, Basic Attention Token, Storj</li>
-                        <li>OmiseGo, SALT, Bankera, 0x</li>
+                        <li>Não tem garantias como as contas que temos em bancos</li>
+                        <li>BC está testando blockchain junto com grandes bancos</li>
+                        <li>No evento da febraban que fui o representante do BC disse que estão atentos e trabalhando</li>
                     </ul>
                 </aside>
             </section>
-            
-            <section>
-                <h2>Decentralized Applications</h2>
-                    <div>
-                        Do DApps already exist?
-                    </div>
-                    <ul class="fragment fade-up">
-                        <li><a href="http://www.bittorrent.com/">BitTorrent</a></li>
-                        <li><a href="https://www.torproject.org">Tor</a></li>
-                        <li><a href="https://www.bitcoin.org">Bitcoin</a></li>
-                        <li><a href="https://bitmessage.org">Bitmessage</a></li>
-                    </ul>
-            </section>
 
             <section>
-                <h2>Smart Contracts</h2>
-
-                <ul>
-                    <li>Self-executing contracts.</li>
-                    <li>SC are programs with a wallet.</li>
-                    <li>They involve a number of parties.</li>
-                    <li>SC encodes rules and penalties around an agreement in a computer program.</li>
-                    <li>A trigger event (like an expiration date, for example) is hit and the contract executes itself.</li>
-                    <li>Oracles are trusted data feeds that send information to the Smart Contract.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Autonomous Agents</h2>
-
-                <ul>
-                    <li>Software that runs without needing human assistance.</li>
-                    <li>They could be able to reproduce (like a computer virus)
-                        <ul>
-                            <li>i.e. rent virtual private servers and install new instances of itself.</li>
-                        </ul>
-                    </li>
-                    <li>They could improve their program, hiring devs or using genetic algorithms and AI.</li>
-                </ul>
-
-                <aside class="notes">
-                    <p>such a system would start off running an automated business on one virtual private server,
-                        and then once its profits increase it would rent other servers and install its own software on
-                        them, adding them to its network.</p>
-                </aside>
-
-            </section>
-            
-            <section>
-                <h2>Decentralized Applications</h2>
-                <p>DApp = frontend (or client) + contracts. </p>
-                <ul>
-                    <li>Public registries (car or home registry, dns names, etc.)</li>
-                    <li>Smart properties, smart properties sharing.</li>
-                    <li>Insurance.</li>
-                    <li>Governance, iVoting.</li>
-                </ul>
-                
-                <aside class="notes">
-                    <ul>
-                        <li>Esempio del pubblico registro automobilistico.</li>
-                        <li>Esempio del car sharing.</li>
-                        <li>Lottery</li>
-                        <li>Assicurazione sanitaria.</li>
-                        <li>https://e-estonia.com/</li>
-                    </ul>
-                </aside>
-            </section>
-            
-            <section>
-                <h2>Decentralized Autonomous Organizations</h2>
-                
-                <blockquote> 
-                    <q>It is an entity that lives on the internet and exists autonomously, but also heavily relies on 
-                        hiring individuals to perform certain tasks that the automaton itself cannot do.</q>
-                    <div class="author"><a href="https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide/">Vitalik Buterin</a></div>
+                <h2>Banco Central Português</h2>
+                <blockquote>
+                  "(...) as moedas virtuais não são seguras. As entidades que emitem e comercializam moedas virtuais não são reguladas nem supervisionadas por qualquer autoridade do sistema financeiro, nacional ou europeia" Comunicado do Banco de Portugal
                 </blockquote>
-                
-            </section>
-            
-            <section>
-                <h2>Decentralized Autonomous Organizations</h2>
-                <p>
+                <p>Veja: <a href="https://www.jn.pt/economia/interior/bitcoin-a-moeda-digital-que-esta-a-desafiar-o-dinheiro-tradicional-8959975.html">Bitcoin: a moeda digital que está a desafiar o dinheiro tradicional</a>.</p>
+                <aside class="notes">
                     <ul>
-                    <li>Has an internal capital, or properties and assets.</li>
-                    <li>Makes decisions for itself.</li>
-                    <li>Can buy resources and hire people.</li>
-                    <li>They could pay dividends => Decentralized Autonomous Corporations (DAC).</li>
+                        <li>O BC holandês criou sua própria moeda digital, mas apenas para uso interno. O objetivo é compreender melhor o funcionamento do dinheiro criptografado.</li>
+                        <li>O vice-presidente do BCE, Vítor Constâncio, disse em setembro que a bitcoin não era uma moeda, mas sim um instrumento de especulação.</li>
+                        <li>E o presidente do JPMorgan, um dos maiores bancos do Mundo, foi ainda mais direto. "Quem for suficientemente estúpido para comprar, acabará por pagar o preço", disse Jamie Dimon</li>
                     </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Estcoin: criptomoeda da Estônia</h2>
+                <blockquote>
+                  "An ICO within the e-Residency ecosystem would create a strong incentive alignment between e-residents and this fund, and beyond the economic aspect makes the e-residents feel like more of a community since there are more things they can do together."
+                  Vitalik Buterin, Ethereum founder and a supporter of the Estcoin Project
+                </blockquote>
+                <p>Veja: <a href="https://btcmanager.com/estonia-considers-first-ever-government-backed-ico/">Estonia Considers Issuing ‘Estcoin’ in First Ever Government-Backed ICO</a> e <a href="https://e-resident.gov.ee/">e-Residency</a></p>
+                <aside class="notes">
+                    <ul>
+                        <li>Estcoin é o possível nome</li>
+                        <li>e-Residency: primeiro país a dar residência eletronica para qualquer pessoa no mundo que queira empreender</li>
+                        <li>Estônia é um dos países mais inovadores e que utilizam TI para isso</li>
+                        <li>O cenário mundial do ponto de vista dos reguladores ainda é bem cético, mas estão todos atentos e trabalhando para entender melhor</li>
+                    </ul>
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h1>Momento de reflexão</h1>
+            </section>
+
+            <section>
+                <h2>Ponto de vista do G20</h2>
+                <p>
+                  "We acknowledge that technological innovation, including that underlying crypto-assets, has the potential to improve the efficiency and inclusiveness of the financial system and the economy more broadly. Cryptoassets do, however, raise issues with respect to consumer and investor protection, market integrity, tax evasion, money laundering and terrorist financing (...)"
                 </p>
-                <p>See: <a href="https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide/">DAOs, DACs, DAs and More: An Incomplete Terminology Guide, Vitalik Buterin.</a></p>
+                <p>Veja: <a href="https://back-g20.argentina.gob.ar/sites/default/files/media/communique_g20.pdf">Communiqué 19-20 March 2018, Buenos Aires, Argentina</a>.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Não tem garantias como as contas que temos em bancos</li>
+                        <li>BC está testando blockchain junto com grandes bancos</li>
+                        <li>No evento da febraban que fui o representante do BC disse que estão atentos e trabalhando</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <a href="images/custo_minerar_bitcoin.jpg"><h2>Custo para mineração</h2></a>
+            </section>
+
+            <section>
+                <h2>Financiamento de terrorismo</h2>
+                <p>
+                  "AS the Bitcoin price soars, grotesque terror network ISIS has been using the cryptocurrency to fund its reign of terror."
+                </p>
+                <p>Veja: <a href="https://www.express.co.uk/finance/city/893151/Bitcoin-price-latest-news-ISIS-terror-cryptocurrency">Bitcoin WARNING: ISIS using cryptocurrency to fund reign of terror as Bitcoin price soars</a>.</p>
+                <aside class="notes">
+                    <ul>
+                        <li>Está sendo utilizado por grupos terroristas</li>
+                        <li>Deep web</li>
+                        <li>Lavagem de dinheiro</li>
+                    </ul>
+                </aside>
             </section>
         </section>
 
@@ -1250,16 +764,16 @@
                 ## References
 
                 - Demo:
-                    - [Anders Brownworth: Blockchain demo](https://anders.com/blockchain/). 
+                    - [Anders Brownworth: Blockchain demo](https://anders.com/blockchain/).
                 - Books:
                     - [Satoshi Nakamoto: Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf).
                     - [A. M. Antonopoulos: Mastering Bitcoin](https://bitcoinbook.info/).
                     - [Gianmaria Allisiardi: Bitcoin Per Tutti](https://www.bitcoinpertutti.org/).
             </section>
-            
+
             <section data-markdown data-background-image="images/typewriter-801921_1920.jpg">
                 ## References
-                
+
                 - Online courses:
                     - [Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency).
                 - Movies:
@@ -1271,13 +785,13 @@
                     - [Marco Ducci](https://www.youtube.com/channel/UCLvpXvMNTZR06mkJPP50Qsw).
                     - [Ferdinando M. Ametrano](https://www.youtube.com/channel/UCq5tOjw0pZLeoxnqkC5KSHQ).
             </section>
-            
+
         </section>
-        
+
         <section class="center">
-            <h1>The end</h1>
-            <h2>Thanks for your attention!</h2>
-            
+            <h1>Fim</h1>
+            <h2>Obrigado pela atenção!</h2>
+            <h2>Dúvidas?</h2>
         </section>
 
     </div>
